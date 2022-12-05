@@ -42,7 +42,6 @@ University of Illinois Urbana-Champaign\\
 \end{center}
 \vspace{15pt}
 ```
-
 ## **EDUCATION**
 
 ### School of Labor and Employment Relations, University of Illinois Urbana-Champaign
@@ -95,51 +94,51 @@ Teaching Assistant, Executive MBA Midterm Module, China Europe International Bus
 
 ## **REFEREED JOURNAL PUBLICATIONS**
 
-Song, Q. C., Shin, H. J., **Tang, C.**, Hanna, A., & Behrend, T. S. (2022). Investigating machine learning's capacity to enhance the prediction of career choices. *Personnel Psychology*, 1-25. https://doi.org/10.1111/peps.12529
+Song, Q. C., Shin, H. J., Tang, C., Hanna, A., & Behrend, T. S. (2022). Investigating machine learning's capacity to enhance the prediction of career choices. *Personnel Psychology*, 1-25. https://doi.org/10.1111/peps.12529
 
-Newman, D. A., **Tang, C.**, Song, Q. C., & Wee, S. (accepted). Dropping the GRE, keeping the GRE, or using GRE-optional admissions? Considering test fairness and Pareto-optimal tradeoffs. *International Journal of Testing.* https://doi.org/10.1080/15305058.2021.2019750
+Newman, D. A., Tang, C., Song, Q. C., & Wee, S. (accepted). Dropping the GRE, keeping the GRE, or using GRE-optional admissions? Considering test fairness and Pareto-optimal tradeoffs. *International Journal of Testing.* https://doi.org/10.1080/15305058.2021.2019750
 
-Song, Q. C., **Tang, C.**, Newman, D. A., & Wee, S. (conditionally accepted). Adverse impact reduction and job performance optimization via Pareto-optimal weighting: A shrinkage formula and regularization technique using machine learning. *Journal of Applied Psychology*.
+Song, Q. C., Tang, C., Newman, D. A., & Wee, S. (conditionally accepted). Adverse impact reduction and job performance optimization via Pareto-optimal weighting: A shrinkage formula and regularization technique using machine learning. *Journal of Applied Psychology*.
 
 Song, Q. C., Tang, C., Alexander III, L., Hickman, L., & Kim, Y. (conditionally accepted). Multi-objective optimization for personnel selection: A guide, tutorial, and user-friendly tool. *Personnel Psychology*. (Part of a composite paper on reducing adverse impact in personnel selection through the application of artificial intelligence and machine learning)
 
-Song, Q. C., **Tang, C.**, & Wee, S. (2021). Making sense of model generalizability: A tutorial on cross-validation in R and Shiny. *Advances in Methods and Practices in Psychological Science. 4*(1): 1-17. https://doi.org/10.1177/2515245920947067
+Song, Q. C., Tang, C., & Wee, S. (2021). Making sense of model generalizability: A tutorial on cross-validation in R and Shiny. *Advances in Methods and Practices in Psychological Science. 4*(1): 1-17. https://doi.org/10.1177/2515245920947067
 
-Yang, Y., **Tang, C.**, Qu, X., Wang, C., & Denson, T. F. (2018). Group facial width-to-height ratio predicts intergroup negotiation outcomes. *Frontiers in Psychology, 9*. https://doi.org/10.3389/fpsyg.2018.00214
+Yang, Y., Tang, C., Qu, X., Wang, C., & Denson, T. F. (2018). Group facial width-to-height ratio predicts intergroup negotiation outcomes. *Frontiers in Psychology, 9*. https://doi.org/10.3389/fpsyg.2018.00214
 
 ## **MANUSCRIPTS UNDER REVIEW**
 
-**Tang, C.**, Hickman, L., Song, Q. C., & Alexander III, L. (**1st R&R**). \[Details omitted for blind reviewing\]. *Journal of Applied Psychology.*
+Tang, C., Hickman, L., Song, Q. C., & Alexander III, L. (**1st R&R**). \[Details omitted for blind reviewing\]. *Journal of Applied Psychology.*
 
-Song, Q. C., **Tang, C.**, & Wee, S. (**1st R&R**). \[Details omitted for blind reviewing\]. *Journal of Applied Psychology.*
+Song, Q. C., Tang, C., & Wee, S. (**1st R&R**). \[Details omitted for blind reviewing\]. *Journal of Applied Psychology.*
 
-**Tang, C.**, Chen, Y., Wei, W, & Newman, D. A. (**3rd R&R, revision submitted**). \[Details omitted for blind reviewing\]. *Journal of Business Ethics.*
+Tang, C., Chen, Y., Wei, W, & Newman, D. A. (**3rd R&R, revision submitted**). \[Details omitted for blind reviewing\]. *Journal of Business Ethics.*
 
 ## **MANUSCRIPTS IN PREPARATION**
 
-**Tang, C.**, Newman, D. A., Song, Q. C., & Wee, S. (to be submitted). Shrinkage of diversity tradeoff curves in personnel selection: A comparison of local validity studies, meta-analysis, Bayes-analysis, and ensemble machine learning.
+Tang, C., Newman, D. A., Song, Q. C., & Wee, S. (to be submitted). Shrinkage of diversity tradeoff curves in personnel selection: A comparison of local validity studies, meta-analysis, Bayes-analysis, and ensemble machine learning.
 
-**Tang, C.**, Zhang. B., Lin. Z., Anglim. J., & Li. J. (to be submitted). Faking detection using item-level machine learning.
+Tang, C., Zhang. B., Lin. Z., Anglim. J., & Li. J. (to be submitted). Faking detection using item-level machine learning.
 
-**Tang, C.**, Shin, H. J., & Song, Q. C. (writing in progress). Combining machine learning models to improve prediction accuracy: The use of ensemble learning in organizational research and practice.
+Tang, C., Shin, H. J., & Song, Q. C. (writing in progress). Combining machine learning models to improve prediction accuracy: The use of ensemble learning in organizational research and practice.
 
-**Tang, C.**, Song, Q. C., & Hickman, L. (writing in progress). Detecting and avoiding common data leakage issues when using machine learning in organizational research.
+Tang, C., Song, Q. C., & Hickman, L. (writing in progress). Detecting and avoiding common data leakage issues when using machine learning in organizational research.
 
-Culpepper, S. A. & **Tang, C.** (model implementation). Rank likelihood for non-normal data in Bayesian multilevel models.
+Culpepper, S. A. & Tang, C. (model implementation). Rank likelihood for non-normal data in Bayesian multilevel models.
 
-**Tang, C.**, Chen, Y., Song, Q. C., & Newman, D. A. (writing in progress). Valuing diversity in hiring when choosing a predictor weighting method: An extension of Sackett et al. (2017).
+Tang, C., Chen, Y., Song, Q. C., & Newman, D. A. (writing in progress). Valuing diversity in hiring when choosing a predictor weighting method: An extension of Sackett et al. (2017).
 
-<sup>\*</sup>Lee, S. H., <sup>\*</sup>**Tang, C.**, Wei, W., & Chen, Y. (writing in progress). \[Details omitted for blind reviewing\]. *(\* Equal contribution)*
+<sup>\*</sup>Lee, S. H., <sup>\*</sup>Tang, C., Wei, W., & Chen, Y. (writing in progress). \[Details omitted for blind reviewing\]. *(\* Equal contribution)*
 
 Lee, SH., & **Tang, C**. (data collection). Won't stop searching: Detachment, self-improvement, and job search outcomes.
 
 ## **BOOK CHAPTERS/SECTIONS**
 
-**Tang, C.**, Liu, Y. (forthcoming). Agent-based modeling. In Vancouver, J. B., Wang, M., & Weinhardt, J. M. (eds.), *SIOP Frontiers Series: Computational Modeling for Industrial-Organizational Psychologists*. Washington, DC: American Psychological Association.
+Tang, C., Liu, Y. (forthcoming). Agent-based modeling. In Vancouver, J. B., Wang, M., & Weinhardt, J. M. (eds.), *SIOP Frontiers Series: Computational Modeling for Industrial-Organizational Psychologists*. Washington, DC: American Psychological Association.
 
-Song, Q. C., Liu, M. Q., **Tang, C.**, & Long, L. (2020). Applying principles of big data to the workplace and talent analytics. *Big Data Methods for Psychological Research: New Horizons and Challenges*. Washington D. C., APA books.
+Song, Q. C., Liu, M. Q., Tang, C., & Long, L. (2020). Applying principles of big data to the workplace and talent analytics. *Big Data Methods for Psychological Research: New Horizons and Challenges*. Washington D. C., APA books.
 
-**Tang, C.**, & Yang, Y. (2017). Goals. In Zeigler-Hill, V., & Shackelford, T. K. (Eds.) *Encyclopedia of Personality and Individual Difference*. Springer.
+Tang, C., & Yang, Y. (2017). Goals. In Zeigler-Hill, V., & Shackelford, T. K. (Eds.) *Encyclopedia of Personality and Individual Difference*. Springer.
 
 ## **CONFERENCE PRESENTATIONS**
 
