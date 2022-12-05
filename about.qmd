@@ -18,7 +18,7 @@ about:
 
 Hi, welcome to my personal website. I am currently a PhD candidate at the [School of Labor and Employment Relations, University of Illinois at Urbana-Champaign](https://ler.illinois.edu/). My advisor is [Dr. Daniel A. Newman](https://ler.illinois.edu/directory/1003/). I am also an affiliated doctoral researcher at [Purdue Recruitment and Selection Research Lab](http://qchelseasong.com/) led by [Dr. Q. Chelsea Song](https://hhs.purdue.edu/directory/chelsea-song/).
 
-My research interests are People Analytics and other topics related to Human Resources and Organizational Behavior. For more information about me, please see my CV \[here\](https://tangc.net/cv.html).
+My research interests are People Analytics and other topics related to Human Resources and Organizational Behavior. For more information about me, please see my CV [here](https://tangc.net/cv.pdf).
 
 ## Please note...
 
