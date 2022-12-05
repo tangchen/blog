@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "Chen Tang"
@@ -42,3 +43,6 @@ editor: visual
 comments:
   giscus:
     repo: tangchen/blog
+    
+execute:
+  freeze: auto

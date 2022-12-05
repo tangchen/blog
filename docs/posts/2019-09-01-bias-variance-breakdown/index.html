@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tristan O’Malley">
-<meta name="dcterms.date" content="2022-12-01">
+<meta name="author" content="Chen Tang">
+<meta name="dcterms.date" content="2019-09-01">
 
-<title>Chen Tang - Welcome To My Blog</title>
+<title>Chen Tang - A Very Detailed Bias-Variance Breakdown</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,6 +72,7 @@ gtag('config', 'G-SJNBHSK0N5', { 'anonymize_ip': true});
 </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -127,9 +128,13 @@ gtag('config', 'G-SJNBHSK0N5', { 'anonymize_ip': true});
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
+      <h1 class="title">A Very Detailed Bias-Variance Breakdown</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+                <div class="quarto-category">Machine learning</div>
+                <div class="quarto-category">Bias-variance trade-off</div>
+                <div class="quarto-category">Prediction</div>
+                <div class="quarto-category">Math</div>
+                <div class="quarto-category">Statistics</div>
               </div>
                   </div>
   </div>
@@ -140,14 +145,14 @@ gtag('config', 'G-SJNBHSK0N5', { 'anonymize_ip': true});
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Tristan O’Malley </p>
+               <p>Chen Tang </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">December 1, 2022</p>
+        <p class="date">September 1, 2019</p>
       </div>
     </div>
     
@@ -165,11 +170,72 @@ gtag('config', 'G-SJNBHSK0N5', { 'anonymize_ip': true});
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+<p>Although the concept of bias-variance trade-off is often discussed in machine learning textbooks, e.g., Bishop (2006), Hastie, Tibshirani, and Friedman (2009), James et al.&nbsp;(2013), I also find it important in almost any occasions in which we need to fit a statistical model on a data set with a limited number of observations.</p>
+<p>To better understand the trade-off, we should be clear about the bias-variance decomposition. I prefer to call it bias-variance breakdown cause there are fewer syllables. This post is an attempt to go through the breakdown in a very detailed manner, mainly for my future reference. It may not be 100% correct because I’m very new to this topic. I will make changes if there is anything wrong.</p>
+<section id="what-is-being-broken-down" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-being-broken-down">What is being broken down?</h2>
+<p>First off, the bias-variance concept lives in theory. In practice, we have no way to separate bias and variance. What we could observe is just the sum of them, as well as something called “irreducible error”. We will cover that later in this post.</p>
+<p>Since we are talking about theory, let’s make up the thing that needs to be broken down. Let’s assume that we are interested in studying the relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. Suppose the relationship is: <span class="math display">\[Y = f(X) + \epsilon\]</span>,</p>
+<p>where <span class="math inline">\(\epsilon\)</span> is i.i.d. <span class="math inline">\(E(\epsilon) = 0\)</span> and <span class="math inline">\(\text{Var}(\epsilon) = \sigma^2\)</span>.</p>
+<p>Then we obtain a data set, <span class="math inline">\(D\)</span>, that has <span class="math inline">\(x_i\)</span> and <span class="math inline">\(y_i\)</span> (<span class="math inline">\(D = [x_i, y_i]\)</span>). Note that in the data set, <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are lowercase and have subscripts. This is because we are referring to observed data of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</p>
+<p>As usual, we fit a model to <span class="math inline">\(D\)</span> and obtain the model <span class="math inline">\(\hat{f}(x_i)\)</span>. There is a “hat” on <span class="math inline">\(f(x_i)\)</span> because we are estimating the true model, <span class="math inline">\(f()\)</span>. After getting <span class="math inline">\(\hat{f}()\)</span>, we are interested in how this model would perform in the future. So we have to come up with a way to measure the performance of the model when applied to new data. The most common way to measure the predictive performance of a model is mean squared error (MSE) on a new data set <span class="math inline">\([x^\ast, y^\ast],\)</span> or theoretically, the expected squared error:</p>
+<p><span class="math display">\[E[(y^\ast - \hat{f}(x^\ast))^2]\]</span></p>
+<p>This is the thing to be broken down.</p>
+</section>
+<section id="breaking-it-down" class="level2">
+<h2 class="anchored" data-anchor-id="breaking-it-down">Breaking it down</h2>
+<p>Before we go further, we need to make sure we are clear about which is which. Since this is an expected value, there must be random variables in this equation. What is random here? First, let’s take a look at <span class="math inline">\(\hat{f}(x^\ast)\)</span>.</p>
+<p>We know that <span class="math inline">\(\hat{f}()\)</span> comes from <span class="math inline">\(D\)</span>, and <span class="math inline">\(D\)</span> contains <span class="math inline">\(\epsilon\)</span>, because the true model we assumed is <span class="math inline">\(Y = f(X) + \epsilon\)</span>. So <span class="math inline">\(\hat{f}()\)</span> also contains <span class="math inline">\(\epsilon\)</span> and hence it is a random variable. Second, what about <span class="math inline">\(y^\ast\)</span>? Since <span class="math inline">\([x^\ast, y^\ast]\)</span> is a sample from the true model, it again contains <span class="math inline">\(\epsilon\)</span>, therefore <span class="math inline">\(y^\ast\)</span> is also a random variable.</p>
+<p>Let’s now play a mathematical trick:</p>
+<p><span class="math display">\[E[(y^\ast - \hat{f}(x^\ast))^2] = E[(y^\ast - f(x^\ast) + f(x^\ast) - \hat{f}(x^\ast))^2]\]</span></p>
+<p>Here we just add and subtract <span class="math inline">\(f(x^\ast)\)</span>, nothing is changed. Let <span class="math inline">\(A = y^\ast - f(x^\ast)\)</span> and <span class="math inline">\(B = f(x^\ast) - \hat{f}(x^\ast)\)</span>. Then the above equation becomes:</p>
+<p><span class="math display">\[\begin{aligned}
+E[(A + B)^2] &amp;= E[A^2 + B^2 + 2AB] \\
+&amp;= E[A^2] + E[B^2] + 2E[AB]
+\end{aligned}\]</span></p>
+<p>Let’s put <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> back</p>
+<p><span class="math display">\[E[(y^\ast - f(x^\ast))^2] + E[(f(x^\ast) - \hat{f}(x^\ast))^2] + 2E\{[y^\ast - f(x^\ast)][f(x^\ast) - \hat{f}(x^\ast)]\}\]</span></p>
+<p>This is very complicated, especially the long thing on the right. Let’s first expand it: <span class="math display">\[2\{E[y^\ast f(x^\ast)] - E[y^\ast \hat{f}(x^\ast)] - E[f(x^\ast) f(x^\ast)] + E[f(x^\ast) \hat{f}(x^\ast)]\}\]</span></p>
+<p>According to our theoretical model, we know that <span class="math inline">\(y^\ast = f(x^\ast) + \epsilon\)</span>, so</p>
+<p><span class="math display">\[2\{E[(f(x^\ast) + \epsilon) f(x^\ast)] - E[(f(x^\ast) + \epsilon) \hat{f}(x^\ast)] - E[f(x^\ast) f(x^\ast)] + E[f(x^\ast) \hat{f}(x^\ast)]\}\]</span></p>
+<p><span class="math display">\[2\{[f(x^\ast)]^2 - E[f(x^\ast) \hat{f}(x^\ast) + \epsilon \hat{f}(x^\ast)] - [f(x^\ast)]^2 + E[f(x^\ast) \hat{f}(x^\ast)]\}\]</span></p>
+<p><span class="math display">\[2\{[f(x^\ast)]^2 - E[f(x^\ast) \hat{f}(x^\ast)] + E[\epsilon \hat{f}(x^\ast)] - [f(x^\ast)]^2 + E[f(x^\ast) \hat{f}(x^\ast)]\}\]</span></p>
+<p>Four terms cancel out, the term <span class="math inline">\(E[\epsilon \hat{f}(x^\ast)] = 0\)</span>, because <span class="math inline">\(\epsilon\)</span> and <span class="math inline">\(\hat{f}(x^\ast)\)</span> are independent. Therefore <span class="math inline">\(E[\epsilon \hat{f}(x^\ast)] = E[\epsilon] \times E[\hat{f}(x^\ast)] = 0\)</span>.</p>
+<p>OK. That long thing becomes zero and we are left with</p>
+<p><span class="math display">\[E[(y^\ast - f(x^\ast))^2] + E[(f(x^\ast) - \hat{f}(x^\ast))^2]\]</span></p>
+<p>Now let’s play a similar trick on the second term, the first term remains unchanged.</p>
+<p><span class="math display">\[E[(y^\ast - f(x^\ast))^2] + E\{[f(x^\ast) - E[\hat{f}(x^\ast)] + E[\hat{f}(x^\ast)] - \hat{f}(x^\ast)]^2\}\]</span></p>
+<p>Again let <span class="math inline">\(A = f(x^\ast) - E[\hat{f}(x^\ast)]\)</span> and <span class="math inline">\(B = E[\hat{f}(x^\ast)] - \hat{f}(x^\ast)\)</span>.</p>
+<p><span class="math display">\[E[(y^\ast - f(x^\ast))^2] + E[(A + B)^2]\]</span></p>
+<p><span class="math display">\[E[(y^\ast - f(x^\ast))^2] + E[A^2] + E[B^2] + 2E[AB]\]</span></p>
+<p>Plug in <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>.</p>
+<p><span class="math display">\[E[(y^\ast - f(x^\ast))^2] + E\{[f(x^\ast) - E[\hat{f}(x^\ast)]]^2\} + E\{[E[\hat{f}(x^\ast)] - \hat{f}(x^\ast)]^2\}\]</span> <span class="math display">\[ + 2E\{[f(x^\ast) - E[\hat{f}(x^\ast)]][E[\hat{f}(x^\ast)] - \hat{f}(x^\ast)]\}\]</span></p>
+<p>Let’s again look at the most annoying thing on the second row. We notice that (1) <span class="math inline">\(f(x^\ast) - E[\hat{f}(x^\ast)]\)</span> is a constant, and (2) the expected value of <span class="math inline">\(E[\hat{f}(x^\ast)] - \hat{f}(x^\ast)]\)</span> is just <span class="math inline">\(E\{E[\hat{f}(x^\ast)]\} - E[\hat{f}(x^\ast)]\)</span>. This equals <span class="math inline">\(E[\hat{f}(x^\ast)] - E[\hat{f}(x^\ast)] = 0\)</span>.</p>
+<p>So we are left with</p>
+<p><span class="math display">\[E[(y^\ast - f(x^\ast))^2] + E\{[f(x^\ast) - E[\hat{f}(x^\ast)]]^2\} + E\{[E[\hat{f}(x^\ast)] - \hat{f}(x^\ast)]^2\}\]</span></p>
+<p>We also notice that, in the second term, both <span class="math inline">\(f(x^\ast)\)</span> and <span class="math inline">\(E[\hat{f}(x^\ast)]\)</span> are constants, so we can drop the expectation operator.</p>
+<p><span class="math display">\[E[(y^\ast - f(x^\ast))^2] + [f(x^\ast) - E[\hat{f}(x^\ast)]]^2 + E\{[E[\hat{f}(x^\ast)] - \hat{f}(x^\ast)]^2\}\]</span></p>
+<p>Cool! We have finished the breakdown.</p>
+</section>
+<section id="naming-things" class="level2">
+<h2 class="anchored" data-anchor-id="naming-things">Naming things</h2>
+<p>As a final step, let’s name the three terms in</p>
+<p><span class="math display">\[E[(y^\ast - f(x^\ast))^2] + [f(x^\ast) - E[\hat{f}(x^\ast)]]^2 + E\{[E[\hat{f}(x^\ast)] - \hat{f}(x^\ast)]^2\}\]</span></p>
+<p>The first term, <span class="math inline">\(E[(y^\ast - f(x^\ast))^2]\)</span>, is the variance of <span class="math inline">\(\epsilon\)</span>, which is <span class="math inline">\(\sigma^2\)</span>. We call this “irreducible error” or “irreducible noise”.</p>
+<p>The second term, <span class="math inline">\([f(x^\ast) - E[\hat{f}(x^\ast)]]^2\)</span>, is the “squared bias”, because the definition of the bias of an estimator is <span class="math inline">\(\text{bias}(\hat{\theta}) = E(\hat{\theta}) - \theta\)</span>.</p>
+<p>The third term, <span class="math inline">\(E\{[E[\hat{f}(x^\ast)] - \hat{f}(x^\ast)]^2\}\)</span>is, by definition, the variance of <span class="math inline">\(\hat{f}(x^\ast)\)</span>.</p>
+<p>So to put everything together,</p>
+<p><span class="math display">\[E[(y^\ast - \hat{f}(x^\ast))^2] = \text{Var}(\epsilon) + \text{bias}^2(\hat{f}(x^\ast)) + \text{Var}(\hat{f}(x^\ast))\]</span></p>
+</section>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
+<p>Bishop, Christopher M. (2006). <em>Pattern recognition and machine learning</em>. New York: Springer,</p>
+<p>Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani. (2013). <em>An introduction to statistical learning: with applications in R</em>. New York :Springer,</p>
+<p>Hastie, T., Tibshirani, R., &amp; Friedman, J. H. (2009). <em>The elements of statistical learning: data mining, inference, and prediction</em>. 2nd ed.&nbsp;New York: Springer.</p>
+<p>(Image credit: <a href="http://scott.fortmann-roe.com/docs/BiasVariance.html" class="uri">http://scott.fortmann-roe.com/docs/BiasVariance.html</a>)</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
