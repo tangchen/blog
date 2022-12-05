@@ -1,0 +1,439 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  20,
+]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage[]{libertinus}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[top=20mm,left=20mm,right=20mm,bottom=20mm,heightrounded]{geometry}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, breakable, frame hidden, boxrule=0pt, sharp corners]}{\end{tcolorbox}}\fi
+
+\begin
+{huge}\begin{center}{\bf CHEN TANG}\end{center}\end{huge}
+\vspace{15pt}
+\begin{center}
+School of Labor and Employment Relations\\
+\vspace{5pt}
+University of Illinois Urbana-Champaign\\
+\vspace{5pt}
+504 E Armory Ave, Champaign, IL 61820\\
+\vspace{5pt}
+\href{mailto:tangc@tangc.net}{Email} ∙
+\href{https://tangc.net}{Website} ∙
+\href{https://www.linkedin.com/in/tangchen/}{LinkedIn}\\
+\vspace{5pt}
+\textit{(Updated: December 2022)}
+\end{center}
+\vspace{15pt}
+
+\hypertarget{education}{%
+\subsection{\texorpdfstring{\textbf{EDUCATION}}{EDUCATION}}\label{education}}
+
+\hypertarget{school-of-labor-and-employment-relations-university-of-illinois-urbana-champaign}{%
+\subsubsection{School of Labor and Employment Relations, University of
+Illinois
+Urbana-Champaign}\label{school-of-labor-and-employment-relations-university-of-illinois-urbana-champaign}}
+
+Ph.D.~in Human Resources and Industrial Relations, \emph{May 2023
+(expected)}
+
+\hypertarget{school-of-psychology-and-cognitive-science-east-china-normal-university}{%
+\subsubsection{School of Psychology and Cognitive Science, East China
+Normal
+University}\label{school-of-psychology-and-cognitive-science-east-china-normal-university}}
+
+M.Ed. in Applied Psychology, \emph{June 2012}
+
+B.S. in Psychology, \emph{June 2009}
+
+\hypertarget{research-interests}{%
+\subsection{\texorpdfstring{\textbf{RESEARCH
+INTERESTS}}{RESEARCH INTERESTS}}\label{research-interests}}
+
+Diversity in HR Management/Personnel Selection (Adverse impact, equal
+and fair access to employment)
+
+HR Analytics and Machine Learning (Multi-objective optimization,
+ensemble learning, cross-validation, Bayesian statistics)
+
+Behavioral Ethics (Unethical Pro-organizational behavior)
+
+\hypertarget{honors-and-awards}{%
+\subsection{\texorpdfstring{\textbf{HONORS AND
+AWARDS}}{HONORS AND AWARDS}}\label{honors-and-awards}}
+
+2022: Meredith P. Crawford Fellowship, Human Resources Research
+Organization (HumRRO)
+
+2022: International Personnel Assessment Council James C. Johnson
+Student Paper Award
+
+2022: Timothy A. Judge Fellowship, School of Labor and Employment
+Relations, UIUC
+
+2020: University of Illinois List of
+\href{https://citl.illinois.edu/citl-101/measurement-evaluation/teaching-evaluation/teaching-evaluations-(ices)/teachers-ranked-as-excellent}{Teachers
+Ranked as Excellent (Fall 2020)}
+
+\hypertarget{academic-experience}{%
+\subsection{\texorpdfstring{\textbf{ACADEMIC
+EXPERIENCE}}{ACADEMIC EXPERIENCE}}\label{academic-experience}}
+
+Research Assistant, School of Labor and Employment Relations, University
+of Illinois Urbana-Champaign, 2017-Present
+
+Research Assistant, School of Entrepreneurship and Management,
+ShanghaiTech University, 2015-2017
+
+\hypertarget{teaching-experience}{%
+\subsection{\texorpdfstring{\textbf{TEACHING
+EXPERIENCE}}{TEACHING EXPERIENCE}}\label{teaching-experience}}
+
+Teaching Assistant, LER 590 DDD (HR Analytics), School of Labor and
+Employment Relations, UIUC, Fall 2022
+
+Instructor, PSYC 245 (Introduction to Industrial-Organizational
+Psychology), Department of Psychology, UIUC, Spring 2022
+
+Teaching Assistant, LER 593 (Statistics for graduate students in human
+resources), School of Labor and Employment Relations, UIUC, Fall 2020
+
+Teaching Assistant, Negotiation, School of Entrepreneurship and
+Management, ShanghaiTech University, Spring 2016 and Spring 2017
+
+Teaching Assistant, Executive MBA Midterm Module, China Europe
+International Business School, Spring 2017
+
+\newpage
+
+\hypertarget{refereed-journal-publications}{%
+\subsection{\texorpdfstring{\textbf{REFEREED JOURNAL
+PUBLICATIONS}}{REFEREED JOURNAL PUBLICATIONS}}\label{refereed-journal-publications}}
+
+Song, Q. C., Shin, H. J., \textbf{Tang, C.}, Hanna, A., \& Behrend, T.
+S. (2022). Investigating machine learning's capacity to enhance the
+prediction of career choices. \emph{Personnel Psychology}, 1-25.
+https://doi.org/10.1111/peps.12529
+
+Newman, D. A., \textbf{Tang, C.}, Song, Q. C., \& Wee, S. (accepted).
+Dropping the GRE, keeping the GRE, or using GRE-optional admissions?
+Considering test fairness and Pareto-optimal tradeoffs.
+\emph{International Journal of Testing.}
+https://doi.org/10.1080/15305058.2021.2019750
+
+Song, Q. C., \textbf{Tang, C.}, Newman, D. A., \& Wee, S. (conditionally
+accepted). Adverse impact reduction and job performance optimization via
+Pareto-optimal weighting: A shrinkage formula and regularization
+technique using machine learning. \emph{Journal of Applied Psychology}.
+
+Song, Q. C., Tang, C., Alexander III, L., Hickman, L., \& Kim, Y.
+(conditionally accepted). Multi-objective optimization for personnel
+selection: A guide, tutorial, and user-friendly tool. \emph{Personnel
+Psychology}. (Part of a composite paper on reducing adverse impact in
+personnel selection through the application of artificial intelligence
+and machine learning)
+
+Song, Q. C., \textbf{Tang, C.}, \& Wee, S. (2021). Making sense of model
+generalizability: A tutorial on cross-validation in R and Shiny.
+\emph{Advances in Methods and Practices in Psychological Science. 4}(1):
+1-17. https://doi.org/10.1177/2515245920947067
+
+Yang, Y., \textbf{Tang, C.}, Qu, X., Wang, C., \& Denson, T. F. (2018).
+Group facial width-to-height ratio predicts intergroup negotiation
+outcomes. \emph{Frontiers in Psychology, 9}.
+https://doi.org/10.3389/fpsyg.2018.00214
+
+\hypertarget{manuscripts-under-review}{%
+\subsection{\texorpdfstring{\textbf{MANUSCRIPTS UNDER
+REVIEW}}{MANUSCRIPTS UNDER REVIEW}}\label{manuscripts-under-review}}
+
+\textbf{Tang, C.}, Hickman, L., Song, Q. C., \& Alexander III, L.
+(\textbf{1st R\&R}). {[}Details omitted for blind reviewing{]}.
+\emph{Journal of Applied Psychology.}
+
+Song, Q. C., \textbf{Tang, C.}, \& Wee, S. (\textbf{1st R\&R}).
+{[}Details omitted for blind reviewing{]}. \emph{Journal of Applied
+Psychology.}
+
+\textbf{Tang, C.}, Chen, Y., Wei, W, \& Newman, D. A. (\textbf{3rd R\&R,
+revision submitted}). {[}Details omitted for blind reviewing{]}.
+\emph{Journal of Business Ethics.}
+
+\hypertarget{manuscripts-in-preparation}{%
+\subsection{\texorpdfstring{\textbf{MANUSCRIPTS IN
+PREPARATION}}{MANUSCRIPTS IN PREPARATION}}\label{manuscripts-in-preparation}}
+
+\textbf{Tang, C.}, Newman, D. A., Song, Q. C., \& Wee, S. (to be
+submitted). Shrinkage of diversity tradeoff curves in personnel
+selection: A comparison of local validity studies, meta-analysis,
+Bayes-analysis, and ensemble machine learning.
+
+\textbf{Tang, C.}, Zhang. B., Lin. Z., Anglim. J., \& Li. J. (to be
+submitted). Faking detection using item-level machine learning.
+
+\textbf{Tang, C.}, Shin, H. J., \& Song, Q. C. (writing in progress).
+Combining machine learning models to improve prediction accuracy: The
+use of ensemble learning in organizational research and practice.
+
+\textbf{Tang, C.}, Song, Q. C., \& Hickman, L. (writing in progress).
+Detecting and avoiding common data leakage issues when using machine
+learning in organizational research.
+
+Culpepper, S. A. \& \textbf{Tang, C.} (model implementation). Rank
+likelihood for non-normal data in Bayesian multilevel models.
+
+\textbf{Tang, C.}, Chen, Y., Song, Q. C., \& Newman, D. A. (writing in
+progress). Valuing diversity in hiring when choosing a predictor
+weighting method: An extension of Sackett et al.~(2017).
+
+*Lee, S. H., *\textbf{Tang, C.}, Wei, W., \& Chen, Y. (writing in
+progress). {[}Details omitted for blind reviewing{]}. \emph{(* Equal
+contribution)}
+
+Lee, SH., \& \textbf{Tang, C}. (data collection). Won't stop searching:
+Detachment, self-improvement, and job search outcomes.
+
+\hypertarget{book-chapterssections}{%
+\subsection{\texorpdfstring{\textbf{BOOK
+CHAPTERS/SECTIONS}}{BOOK CHAPTERS/SECTIONS}}\label{book-chapterssections}}
+
+\textbf{Tang, C.}, Liu, Y. (forthcoming). Agent-based modeling. In
+Vancouver, J. B., Wang, M., \& Weinhardt, J. M. (eds.), \emph{SIOP
+Frontiers Series: Computational Modeling for Industrial-Organizational
+Psychologists}. Washington, DC: American Psychological Association.
+
+Song, Q. C., Liu, M. Q., \textbf{Tang, C.}, \& Long, L. (2020). Applying
+principles of big data to the workplace and talent analytics. \emph{Big
+Data Methods for Psychological Research: New Horizons and Challenges}.
+Washington D. C., APA books.
+
+\textbf{Tang, C.}, \& Yang, Y. (2017). Goals. In Zeigler-Hill, V., \&
+Shackelford, T. K. (Eds.) \emph{Encyclopedia of Personality and
+Individual Difference}. Springer.
+
+\hypertarget{conference-presentations}{%
+\subsection{\texorpdfstring{\textbf{CONFERENCE
+PRESENTATIONS}}{CONFERENCE PRESENTATIONS}}\label{conference-presentations}}
+
+Tang, C., Newman, D. A., Song, Q. C. \& Wee, S. (July 2022).
+\emph{Shrinkage of diversity tradeoff curves in personnel selection: A
+comparison of local validity studies, meta-analysis, Bayes-analysis, and
+ensemble machine learning} {[}Invited presentation; Winner of the James
+C. Johnson Student Paper Award{]}. The 2022 Annual Conference of the
+International Personnel Assessment Council, San Diego, CA.
+
+Tang, C., Newman, D. A., Song, Q. C. \& Wee, S. (April 2022). Shrinkage
+of diversity tradeoff curves in personnel selection: A comparison of
+local validity studies, meta-analysis, and empirical Bayes-analysis. In
+Song, Q. C., \& Wee, S. (Co-Chairs), \emph{Multi-Objective Optimization
+in the Workplace 3.0: Advancing research on adverse impact in personnel
+selection} {[}Symposium paper{]}. 37th Annual Conference of the Society
+for Industrial and Organizational Psychology, Seattle, WA.
+
+Song, Q. C., Shin, H. J., Tang, C., Hanna, A. \& Behrend, T. S., (April
+2022). Machine learning enhances the prediction of career choices. In
+Chris Nye (Chair), \emph{The power of vocational interests:
+Understanding choices, attitudes, and behavior} {[}Symposium paper{]}.
+37th Annual Conference of the Society for Industrial and Organizational
+Psychology, Seattle, WA.
+
+Tang, C. (June 2021). \emph{Common data leakage issues when using
+machine learning in organizational research} {[}Talk{]}. Technology and
+Measurement Around the Globe. (Purdue University, West Lafayette, IN.
+Online Conference)
+
+Lee, SH., Tang, C., Wei, W., \& Chen, Y. (August 2021). \emph{The Roles
+of Compassion and Resilience on Employee Thriving, Well-being, and
+Interpersonal Deviance} {[}Paper{]}. 81st Annual Meeting of the Academy
+of Management. (Online Conference)
+
+Tang, C., Hickman, L., Song, Q. C., \& Alexander III, L. (April 2021).
+\emph{Comparing Item-Level and Scale-Level Predictive Models: A
+Simulation} {[}Poster{]}. 36th Annual Convention of the Society for
+Industrial and Organizational Psychology, New Orleans, LA. (Online
+Conference)
+
+Tang, C., Newman, D. A., Song, Q. C., \& Wee., S. (April 2021).
+Pareto-Optimal Tradeoffs for Three Notions of Test Fairness. In Song, Q.
+C. (Chair), \emph{Multi-Objective Optimization in the Workplace 2.0:
+Applications in Selectio}n {[}Symposium paper{]}. 36th Annual Convention
+of the Society for Industrial and Organizational Psychology, New
+Orleans, LA. (Online Conference)
+
+Tang, C., Chen, Y., Wei, W. (August 2020). \emph{External work locus of
+control and unethical pro-organizational behavior: A dual-path model}
+{[}Paper{]}. 80th Annual Meeting of the Academy of Management,
+Vancouver, British Columbia, Canada. (Online Conference)
+
+Tang, C., Newman, D. A., \& Song, Q. C. (April 2020). Addressing
+diversity-validity tradeoffs via Pareto weights with orthogonalized
+criteria. In Song, Q. C. \& Wee. S. (Co-chairs), \emph{Multi-Objective
+Optimization in the Workplace: Addressing Adverse Impact in Selection}
+{[}Symposium paper{]}. 35th Annual Convention of the Society for
+Industrial and Organizational Psychology, Austin, TX. (Online
+Conference)
+
+Song, Q. C., \& Tang, C. (April 2020). Adverse impact reduction for
+multiple subgroups: A Pareto-optimization approach. In Song, Q. C. \&
+Wee. S. (Co-chairs), \emph{Multi-Objective Optimization in the
+Workplace: Addressing Adverse Impact in Selection} {[}Symposium
+paper{]}. 35th Annual Convention of the Society for Industrial and
+Organizational Psychology, Austin, TX. (Online Conference)
+
+Tang, C., Shin, H. J., Barve, A., \& Song, Q., C. (April 2020).
+\emph{Using ensemble machine learning to improve assessment in personnel
+selection} {[}Poster{]}. 35th Annual Convention of the Society for
+Industrial and Organizational Psychology, Austin, TX. (Online
+Conference)
+
+Lee, S. H., Tang, C., \& Liang, Y. J. (April 2020). \emph{Won't stop
+searching: Detachment, self-improvement, and job search outcomes}
+{[}Poster{]}. 35th Annual Convention of the Society for Industrial and
+Organizational Psychology, Austin, TX. (Online Conference)
+
+Tang, C., Chen, Y., Song, Q. C., \& Newman, D. A. (April 2019).
+\emph{Predictor weighting with adverse impact and shrinkage: Reply to
+Sackett et al.~(2017)} {[}Poster{]}. 34th Annual Convention of the
+Society for Industrial and Organizational Psychology, Washington, DC.
+
+
+
+\end{document}

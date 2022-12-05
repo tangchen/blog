@@ -6,12 +6,12 @@ website:
   favicon: "images/favicon.ico"
   google-analytics: "G-SJNBHSK0N5"
   navbar:
-    title: " "
+    title: "Chen Tang"
     logo: "images/logo_big.png"
     search: true
     right:
       - text: "Posts"
-        file: index.qmd
+        href: index.qmd
       - text: "CV"
         file: cv.pdf
       - about.qmd
