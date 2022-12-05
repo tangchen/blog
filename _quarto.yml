@@ -6,7 +6,7 @@ website:
   favicon: "images/favicon.ico"
   google-analytics: "G-SJNBHSK0N5"
   navbar:
-    title: "Chen Tang"
+    title: " "
     logo: "images/logo_big.png"
     search: true
     right:
