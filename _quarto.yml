@@ -11,7 +11,7 @@ website:
     search: true
     right:
       - text: "CV"
-        file: CV.pdf
+        file: cv.pdf
       - about.qmd
       - icon: twitter
         href: https://twitter.com/tngchn

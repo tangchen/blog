@@ -1,6 +1,6 @@
 ---
 format:
-  pdf: 
+  pdf:
     documentclass: article
     geometry:
       - top=20mm
@@ -12,6 +12,7 @@ format:
     colorlinks: true
     fontsize: "20"
 ---
+
 <!-- <p style="text-align:center"> <font size="+3"><b>Chen Tang</b></font></font></p> -->
 
 <!-- <p style="text-align:center"><i>(Updated: June 2022)</i></p> -->
@@ -22,22 +23,24 @@ format:
 
 <!-- <p style="text-align:center"><a href="mailto:tangc@tangc.net">tangc@tangc.net</a></p> -->
 
-<!-- TITLE -->
+
+```{=tex}
 \begin{huge}\begin{center}{\bf CHEN TANG}\end{center}\end{huge}
 \vspace{15pt}
+```
 
-<!-- INFO -->
+```{=tex}
 \begin{center}
 School of Labor and Employment Relations\\
 University of Illinois Urbana-Champaign\\
 504 E Armory Ave, Champaign, IL 61820\\
-\href{mailto:tangc@tangc.net}{Email} ∙ 
-\href{https://tangc.net}{Website} ∙ 
+\href{mailto:tangc@tangc.net}{Email} ∙
+\href{https://tangc.net}{Website} ∙
 \href{https://www.linkedin.com/in/tangchen/}{LinkedIn}\\
 \textit{(updated: December 2022)}
 \end{center}
 \vspace{15pt}
-
+```
 ## **EDUCATION**
 
 ### School of Labor and Employment Relations, University of Illinois Urbana-Champaign
@@ -46,8 +49,7 @@ Ph.D. in Human Resources and Industrial Relations, *May 2023 (expected)*
 
 ### School of Psychology and Cognitive Science, East China Normal University
 
-M.Ed. in Applied Psychology, *June 2012*
-B.S. in Psychology, *June 2009*
+M.Ed. in Applied Psychology, *June 2012* B.S. in Psychology, *June 2009*
 
 ## **RESEARCH INTERESTS**
 
@@ -61,14 +63,13 @@ Behavioral Ethics (Unethical Pro-organizational behavior)
 
 2022: Meredith P. Crawford Fellowship, Human Resources Research Organization (HumRRO)
 
-2022: International Personnel Assessment Council James C. Johnson Student Paper Award 
+2022: International Personnel Assessment Council James C. Johnson Student Paper Award
 
 2022: Timothy A. Judge Fellowship, School of Labor and Employment Relations, UIUC
 
 2020: University of Illinois List of [Teachers Ranked as Excellent (Fall 2020)](https://citl.illinois.edu/citl-101/measurement-evaluation/teaching-evaluation/teaching-evaluations-(ices)/teachers-ranked-as-excellent)
 
 ## **ACADEMIC EXPERIENCE**
-
 
 Research Assistant, School of Labor and Employment Relations, University of Illinois Urbana-Champaign, 2017-Present
 
