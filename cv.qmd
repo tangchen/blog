@@ -23,24 +23,26 @@ format:
 
 <!-- <p style="text-align:center"><a href="mailto:tangc@tangc.net">tangc@tangc.net</a></p> -->
 
-
 ```{=tex}
-\begin{huge}\begin{center}{\bf CHEN TANG}\end{center}\end{huge}
+\begin
+{huge}\begin{center}{\bf CHEN TANG}\end{center}\end{huge}
 \vspace{15pt}
-```
-
-```{=tex}
 \begin{center}
 School of Labor and Employment Relations\\
+\vspace{5pt}
 University of Illinois Urbana-Champaign\\
+\vspace{5pt}
 504 E Armory Ave, Champaign, IL 61820\\
+\vspace{5pt}
 \href{mailto:tangc@tangc.net}{Email} ∙
 \href{https://tangc.net}{Website} ∙
 \href{https://www.linkedin.com/in/tangchen/}{LinkedIn}\\
+\vspace{5pt}
 \textit{(updated: December 2022)}
 \end{center}
 \vspace{15pt}
 ```
+
 ## **EDUCATION**
 
 ### School of Labor and Employment Relations, University of Illinois Urbana-Champaign
@@ -49,7 +51,9 @@ Ph.D. in Human Resources and Industrial Relations, *May 2023 (expected)*
 
 ### School of Psychology and Cognitive Science, East China Normal University
 
-M.Ed. in Applied Psychology, *June 2012* B.S. in Psychology, *June 2009*
+M.Ed. in Applied Psychology, *June 2012*
+
+B.S. in Psychology, *June 2009*
 
 ## **RESEARCH INTERESTS**
 
@@ -95,6 +99,10 @@ Song, Q. C., Shin, H. J., **Tang, C.**, Hanna, A., & Behrend, T. S. (2022). Inve
 
 Newman, D. A., **Tang, C.**, Song, Q. C., & Wee, S. (accepted). Dropping the GRE, keeping the GRE, or using GRE-optional admissions? Considering test fairness and Pareto-optimal tradeoffs. *International Journal of Testing.* https://doi.org/10.1080/15305058.2021.2019750
 
+Song, Q. C., **Tang, C.**, Newman, D. A., & Wee, S. (conditionally accepted). Adverse impact reduction and job performance optimization via Pareto-optimal weighting: A shrinkage formula and regularization technique using machine learning. *Journal of Applied Psychology*.
+
+Song, Q. C., Tang, C., Alexander III, L., Hickman, L., & Kim, Y. (conditionally accepted). Multi-objective optimization for personnel selection: A guide, tutorial, and user-friendly tool. *Personnel Psychology*. (Part of a composite paper on reducing adverse impact in personnel selection through the application of artificial intelligence and machine learning)
+
 Song, Q. C., **Tang, C.**, & Wee, S. (2021). Making sense of model generalizability: A tutorial on cross-validation in R and Shiny. *Advances in Methods and Practices in Psychological Science. 4*(1): 1-17. https://doi.org/10.1177/2515245920947067
 
 Yang, Y., **Tang, C.**, Qu, X., Wang, C., & Denson, T. F. (2018). Group facial width-to-height ratio predicts intergroup negotiation outcomes. *Frontiers in Psychology, 9*. https://doi.org/10.3389/fpsyg.2018.00214
@@ -103,13 +111,9 @@ Yang, Y., **Tang, C.**, Qu, X., Wang, C., & Denson, T. F. (2018). Group facial w
 
 **Tang, C.**, Hickman, L., Song, Q. C., & Alexander III, L. (**1st R&R**). \[Details omitted for blind reviewing\]. *Journal of Applied Psychology.*
 
-Song, Q. C., **Tang, C.**, Newman, D. A., & Wee, S. (**2nd R&R**). \[Details omitted for blind reviewing\]. *Journal of Applied Psychology.*
-
 Song, Q. C., **Tang, C.**, & Wee, S. (**1st R&R**). \[Details omitted for blind reviewing\]. *Journal of Applied Psychology.*
 
-**Tang, C.**, Chen, Y., Wei, W, & Newman, D. A. (**2nd R&R, revision submitted**). \[Details omitted for blind reviewing\]. *Journal of Business Ethics.*
-
-Song, Q. C., **Tang, C.**, Alexander III, L., Hickman, L., & Kim, Y. (**2nd R&R**). \[Details omitted for blind reviewing\]. *Personnel Psychology.*
+**Tang, C.**, Chen, Y., Wei, W, & Newman, D. A. (**3rd R&R, revision submitted**). \[Details omitted for blind reviewing\]. *Journal of Business Ethics.*
 
 ## **MANUSCRIPTS IN PREPARATION**
 
