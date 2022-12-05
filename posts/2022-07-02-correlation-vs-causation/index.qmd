@@ -1,0 +1,11 @@
+---
+title: "Correlation vs. Causation"
+author: "Chen Tang"
+date: 2022-07-30
+categories: ["Research Methods"]
+draft: false
+---
+
+A great way to understand correlation $\ne$ causation :)
+
+![](correlation-vs-causation.jpg)

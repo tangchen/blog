@@ -1,0 +1,52 @@
+---
+title: "Hierarchical Models"
+author: "Chen Tang"
+date: "2021-12-04"
+image: hierarchical-model.png
+categories: [Bayesian, Statistics, Math]
+draft: false
+---
+
+## The model
+
+$$\begin{aligned}
+y_{ij} | \mu_j, \sigma^2 &\overset{i.i.d.}\sim \mathcal{N}(\mu_j, \sigma^2),
+\end{aligned}$$ where $i = 1, ..., n_j$, (number of observations in group $j$), and $j = 1, ..., J$, (number of groups).
+
+## Priors
+
+$$\begin{aligned}
+\mu_j | \mu, \tau^2 &\sim \mathcal{N}(\mu, \tau^2) \\
+\mu | \mu_0, \tau_0^2 &\sim \mathcal{N}(\mu_0, \tau_0^2) \\
+\tau^2 | \alpha_\tau, \beta_\tau &\sim \mathcal{IG}(\alpha_\tau, \beta_\tau) \Rightarrow 1/\tau^2 | \alpha_\tau, \beta_\tau \sim \mathcal{G}(\alpha_\tau, \beta_\tau) \\
+\sigma^2 | \alpha_\sigma, \beta_\sigma &\sim \mathcal{IG}(\alpha_\sigma, \beta_\sigma) \Rightarrow 1/\sigma^2 | \alpha_\sigma, \beta_\sigma \sim \mathcal{G}(\alpha_\sigma, \beta_\sigma)
+\end{aligned}$$
+
+## Likelihood
+
+$$\begin{aligned}
+L(y_{ij} | \mu_j, \mu, \sigma^2, \tau^2) &= \prod_{j=1}^J \Big\{\prod_{i = 1}^{n_j}\frac{1}{\sqrt{2 \pi \sigma^2}}exp\Big[-\frac{1}{2}\frac{(y_{ij} - \mu_j)^2}{\sigma^2}\Big]\Big\}
+\end{aligned}$$
+
+## Posterior
+
+$$\begin{aligned}
+p(&\mu_j, \mu, \sigma^2, \tau^2 | y_{ij}, \mu_0, \tau_0^2, \alpha_\tau, \beta_\tau, \alpha_\sigma, \beta_\sigma) \propto \text{ Likelihood} \times \text{Prior}  \\
+\propto &L(y_{ij} | \mu_j, \mu, \sigma^2, \tau^2) \prod_{j=1}^J \Big[p(\mu_j|\mu, \tau^2)\Big]p(\mu|\mu_0, \tau_0^2)p(1/\tau^2|\alpha_\tau, \beta_\tau)p(1/\sigma^2|\alpha_\sigma, \beta_\sigma) \\
+=&\prod_{j=1}^J \Big\{\prod_{i = 1}^{n_j}\frac{1}{\sqrt{2 \pi \sigma^2}}exp\Big[-\frac{1}{2}\frac{(y_{ij} - \mu_j)^2}{\sigma^2}\Big]\Big\} \\
+&\prod_{j=1}^J\Big[\frac{1}{\sqrt{2 \pi \tau^2}}exp\Big[-\frac{1}{2}\frac{(\mu_j - \mu)^2}{\tau^2}\Big] \\
+&\Big[\frac{1}{\sqrt{2 \pi \tau_0^2}}exp\Big[-\frac{1}{2}\frac{(\mu - \mu_0)^2}{\tau_0^2}\Big] \\
+& \frac{\beta_\tau^{\alpha_\tau}}{\Gamma(\alpha_\tau)}(1/\tau^2)^{\alpha_\tau-1}exp[-\beta_\tau(1/\tau^2)] \\
+& \frac{\beta_\sigma^{\alpha_\sigma}}{\Gamma(\alpha_\sigma)}(1/\sigma^2)^{\alpha_\sigma-1}exp[-\beta_\sigma(1/\sigma^2)]
+\end{aligned}$$
+
+## Full conditionals
+
+$$\begin{aligned}
+\mu_j | . &\sim \mathcal{N}\Big(\frac{\sum_{i=1}^{n_j} y_{ij} / \sigma^2 + \mu / \tau^2}{n_j / \sigma^2 + 1/\tau^2}, \frac{1}{n_j/\sigma^2 + 1/\tau^2}\Big) \\
+\mu |. &\sim \mathcal{N}\Big(\frac{\sum_{j=1}^J \mu_j/\tau^2 + \mu_0/\tau_0^2}{J/\tau^2 + 1/\tau_0^2}, \frac{1}{J/\tau^2 + 1/\tau_0^2}\Big) \\
+1/\tau^2 |. &\sim \mathcal{G}\Big(\alpha_\tau + \frac{J}{2}, \beta_\tau + \frac{\sum_{j=1}^J (\mu_j - \mu)^2}{2}\Big) \\
+1/\sigma^2 |. &\sim \mathcal{G}\Big(\alpha_\sigma + \frac{\sum_{j=1}^J n_j}{2}, \beta_\sigma + \frac{\sum_{j=1}^J \sum_{i=1}^{n_j}(y_{ij}-\mu_j)^2}{2}\Big)
+\end{aligned}$$
+
+(image credit: <https://stats.stackexchange.com/q/44583>)
