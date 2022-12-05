@@ -5,17 +5,30 @@ website:
   title: "Chen Tang"
   favicon: "images/favicon.ico"
   google-analytics: "G-SJNBHSK0N5"
-  page-footer:
-    left: "This blog is powered by [Quarto](https://quarto.org/). License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
   navbar:
-    logo: "images/logo.png"
+    title: " "
+    logo: "images/logo_big.png"
+    search: true
     right:
+      - text: "CV"
+        file: CV.pdf
       - about.qmd
-      - CV.qmd
       - icon: twitter
         href: https://twitter.com/tngchn
       - icon: linkedin
         href: https://www.linkedin.com/in/tangchen/
+  page-footer:
+    left: "This blog is powered by [Quarto](https://quarto.org/). License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
+    right:
+      - icon: envelope
+        href: mailto:tangc@tangc.net
+      - icon: linkedin
+        href: https://www.linkedin.com/in/tangchen/
+      - icon: twitter
+        href: https://twitter.com/tngchn
+      - icon: github
+        href: https://github.com/tangchen/
+
 format:
   html:
     smooth-scroll: true
