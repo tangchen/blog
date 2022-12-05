@@ -38,7 +38,7 @@ University of Illinois Urbana-Champaign\\
 \href{https://tangc.net}{Website} ∙
 \href{https://www.linkedin.com/in/tangchen/}{LinkedIn}\\
 \vspace{5pt}
-\textit{(updated: December 2022)}
+\textit{(Updated: December 2022)}
 \end{center}
 \vspace{15pt}
 ```

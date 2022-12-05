@@ -10,6 +10,8 @@ website:
     logo: "images/logo_big.png"
     search: true
     right:
+      - text: "Posts"
+        file: index.qmd
       - text: "CV"
         file: cv.pdf
       - about.qmd
