@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: chen.png
+image: images/chen.png
 about:
   template: solana
   links:

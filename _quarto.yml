@@ -3,12 +3,12 @@ project:
 
 website:
   title: "Chen Tang"
-  favicon: "favicon.ico"
+  favicon: "images/favicon.ico"
   google-analytics: "G-SJNBHSK0N5"
   page-footer:
     left: "This blog is powered by [Quarto](https://quarto.org/). License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
   navbar:
-    logo: "logo.png"
+    logo: "images/logo.png"
     right:
       - about.qmd
       - CV.qmd
