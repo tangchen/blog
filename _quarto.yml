@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "Chen Tang"
+  favicon: "favicon.ico"
+  google-analytics: "G-SJNBHSK0N5"
+  page-footer:
+    left: "This blog is powered by [Quarto](https://quarto.org/). License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
+  navbar:
+    logo: "logo.png"
+    right:
+      - about.qmd
+      - CV.qmd
+      - icon: twitter
+        href: https://twitter.com/tngchn
+      - icon: linkedin
+        href: https://www.linkedin.com/in/tangchen/
+format:
+  html:
+    smooth-scroll: true
+    theme: litera
+    css: styles.css
+
+editor: visual
+

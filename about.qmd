@@ -1,0 +1,24 @@
+---
+title: "About"
+image: chen.png
+about:
+  template: solana
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/tngchn
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/tangchen/
+    # - icon: github
+    #   text: Github
+    #   href: https://github.com/tangchen
+---
+
+Hi, welcome to my personal website. I am currently a PhD candidate at the [School of Labor and Employment Relations, University of Illinois at Urbana-Champaign](https://ler.illinois.edu/). My advisor is [Dr. Daniel A. Newman](https://ler.illinois.edu/directory/1003/). I am also an affiliated doctoral researcher at [Purdue Recruitment and Selection Research Lab](http://qchelseasong.com/) led by [Dr. Q. Chelsea Song](https://hhs.purdue.edu/directory/chelsea-song/).
+
+My research interests are People Analytics and other topics related to Human Resources and Organizational Behavior. For more information about me, please see my CV \[here\](https://tangc.net/cv.html).
+
+## Please note...
+
+This website is actually my personal notebook. It contains stuff that I'm working on, or some pieces of information that I find interesting or important. They are very unstructured and probably contain a lot of errors/typos/thoughtos. ;o)
