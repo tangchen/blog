@@ -13,12 +13,12 @@ website:
     left: 
       - text: "Posts"
         href: index.qmd
+      - text: "Talks"
+        href: talks.qmd
+    right:
       - text: "CV"
         file: cv.pdf
       - about.qmd
-    right:
-      - text: "Fun Stuff"
-        href: fun.qmd
       - icon: twitter
         href: https://twitter.com/tngchn
       - icon: linkedin

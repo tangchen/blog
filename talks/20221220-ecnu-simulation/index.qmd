@@ -1,0 +1,54 @@
+---
+title: ""
+author: "Chen Tang"
+image: "bullseye.png"
+date: 2022-12-20
+categories: ["Simulation", "Math", "Statistics"]
+draft: true
+---
+
+## 蒙特卡洛模拟 Monte Carlo Simulation
+
+-   是一种通过重复随机采样和统计分析来估计结果的数学方法（using repeated random sampling and statistical analysis to compute the results， Raychaudhuri, 2008）
+
+-   最早由约翰·冯·诺依曼和斯塔尼斯拉夫·乌拉姆在曼哈顿计划中进行系统性的发展和应用
+
+-   Monte Carlo取自于摩纳哥一赌场的名字：
+
+    ![](1465px-Monte_Carlo_Casino_Monaco.jpg)
+
+### **例子: 使用MC估算\$**\\pi\$
+
+```{r}
+circleFun <- function(center=c(0,0), diameter=1, npoints=100, start=0, end=2)
+{
+  tt <- seq(start*pi, end*pi, length.out=npoints)
+  data.frame(x = center[1] + diameter / 2 * cos(tt), 
+             y = center[2] + diameter / 2 * sin(tt))
+}
+
+ dat <- circleFun(c(0,7.625), 9.8, start=1.5, end=2.5)
+
+ ggplot(dat,aes(x,y)) + 
+geom_polygon(color="black") + 
+ggtitle("half circle") +
+coord_equal()
+```
+
+## Agent-Based Modeling
+
+### 运算模型 Computational Modeling
+
+-   是一种理论的形式 (对比基于语言的理论，基于数学模型的理论): A form of theory (vs. textual theory, mathematical theory; Wilensky & Rand, 2015)
+-   也是一套建立理论的工具: A tool for theorizing (Sutton & Saw, 1995)
+-   运算模型之于理论，相当于统计分析之于数据: "Computational modeling is to theories as statistical analysis is to data" (Vancouver & Weinhardt, 2012)
+
+## 谢谢！
+
+联系方式：
+
+-   邮件：tangc\@tangc.net
+
+-   微信：
+
+    <img src="wechat.JPG" style="width:400px"/>
