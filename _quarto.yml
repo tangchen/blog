@@ -10,14 +10,15 @@ website:
     title: " "
     logo: "images/logo_big.png"
     search: true
-    right:
+    left: 
       - text: "Posts"
         href: index.qmd
       - text: "CV"
         file: cv.pdf
+      - about.qmd
+    right:
       - text: "Fun Stuff"
         href: fun.qmd
-      - about.qmd
       - icon: twitter
         href: https://twitter.com/tngchn
       - icon: linkedin

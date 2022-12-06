@@ -1,5 +1,82 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi, welcome to my personal website. I am currently a PhD candidate at the School of Labor and Employment Relations, University of Illinois at Urbana-Champaign. My advisor is Dr. Daniel A. Newman. I am also an affiliated doctoral researcher at Purdue Recruitment and Selection Research Lab led by Dr. Q. Chelsea Song.\nMy research interests are People Analytics and other topics related to Human Resources and Organizational Behavior. For more information about me, please see my CV here."
+  },
+  {
+    "objectID": "about.html#please-note",
+    "href": "about.html#please-note",
+    "title": "About",
+    "section": "Please note…",
+    "text": "Please note…\nThis website is actually my personal notebook. It contains stuff that I’m working on, or some pieces of information that I find interesting or important. They are very unstructured and probably contain a lot of errors/typos/thoughtos. ;o)"
+  },
+  {
+    "objectID": "fun.html",
+    "href": "fun.html",
+    "title": "Chen Tang",
+    "section": "",
+    "text": "Life\n\n\nPython\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\nChen Tang\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "funstuff/20220701-learn-py-with-keen/index.html",
+    "href": "funstuff/20220701-learn-py-with-keen/index.html",
+    "title": "Learning Python with Keen",
+    "section": "",
+    "text": "My older son, Keen, is six years old now and he’s getting interested in coding. So I’m now working on a series of Jupyter notebooks that introduce him to Python.\nAlthough I’m more of an R user, I feel Python is a better language to start for kids.\n(Thanks to the reticulate package, I am able to write and run Python code within RStudio. Mad respect to whoever developed this package!)"
+  },
+  {
+    "objectID": "funstuff/20220701-learn-py-with-keen/index.html#session-1-python-basics",
+    "href": "funstuff/20220701-learn-py-with-keen/index.html#session-1-python-basics",
+    "title": "Learning Python with Keen",
+    "section": "Session 1: Python Basics",
+    "text": "Session 1: Python Basics\n\n1. Numbers\n\n1.1. Using Python as a calculator\n\n1 + 5\n\n6\n\n\n\n538687445 + 3897886465\n\n4436573910\n\n\n\n6 - 3\n\n3\n\n\n\n30 - 8\n\n22\n\n\n\n\n1.2. Variables\nThe equals sign (“=”) means assignment, e.g., \\(x = 1\\) gives the value \\(1\\) to variable \\(x\\).\n\n1 + 5\n\n6\n\n\n\nx = 1\ny = 5\n\nx + y\n\n6\n\n\n\nx = 3\n\nx + y\n\n8\n\n\n\nz = x - y\nz\n\n-2\n\n\nYour turn: - Create two variables: a and b. Assign 5 to a, and 10 to b - Calculate the sum of a and b, save it to a third variable called c - Calculate \\(a \\times b\\) (hint: In Python, the multiplication sign is “*” [asterisk]) - Calculate \\(a \\div b\\) (The division sign is “/” [forward slash])\n\na = 5\nb = 10\n\n\nc = a + b\n\n\na * b\n\n50\n\n\n\na / b\n\n0.5\n\n\nMini Project:\nCalculate \\(1 + 2 + ... + 10\\).\nHint:\n\\[1 + 2 + ... + k = \\frac{k \\times (k + 1)}{2}\\]\n(Why?)\n\n# step 1: determine k\nk = 10\n\n# step 2: write the equation\nk * (k + 1) / 2\n\n[1] 55\n\n\n\n# defining a function to take any k value\ndef calc_sum(k):\n   s = k * (k + 1) / 2 \n   return s\n\ncalc_sum(k = 1_000_000)\n\n500000500000.0\n\n\n\n\n1.3 Strings\n\ns1 = \"hello\"\ns2 = \"Keen\"\n\nprint(s1)\n\nhello\n\n\n\nprint(s2)\n\nKeen\n\n\n\nprint(s1 + s2)\n\nhelloKeen\n\n\n\nprint(s1 + \", \" + s2)\n\nhello, Keen\n\n\n\nprint(s1 + \", \" + s2 + \"!\")\n\nhello, Keen!\n\n\n\nprint(\"H\" + s1[1:5] + \", \" + s2 + \"!\")\n\nHello, Keen!\n\n\n\na1 = \"4\"\nb5 = \"14\"\n\na1 + b5\n\n'414'\n\n\nProject:\n\n# tell me about you\nname = \"huijing\"\nage = 19\n\nprint(\"Hello, \" + name + \"! You are \" + str(age) + \" years old.\")\n\nHello, huijing! You are 19 years old.\n\n\n\nname\n\n'huijing'\n\n\"H\" + name[1:]\n\n'Huijing'\n\n\n\n\n1.4 Lists\n\nfruits = [\"apple\", \"banana\", \"peach\"]\nkeen = [2, 4, 1]\nmom = [0, 1, 3]\n\n\n# how many bananas did Keen eat this week?\nprint(\"Keen ate \" + str(keen[1]) + \" bananas this week.\")\n\nKeen ate 4 bananas this week.\n\n\n\n# How many peaches did mon eat this week?\nprint(\"Mom ate \" + str(mom[2]) + \" peaches this week.\")\n\nMom ate 3 peaches this week.\n\n\n\n# How many bananas were eaten in total?\nprint(\"In total, \" + str(keen[1] + mom[1]) + \" were eaten this week\")\n\nIn total, 5 were eaten this week"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Chen Tang",
+    "section": "",
+    "text": "Research Methods\n\n\n\n\n\n\n\n\n\n\n\nJul 30, 2022\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nBayesian\n\n\nStatistics\n\n\nMath\n\n\n\n\n\n\n\n\n\n\n\nDec 4, 2021\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMath\n\n\nStatistics\n\n\n\n\n\n\n\n\n\n\n\nMay 31, 2021\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMath\n\n\nStatistics\n\n\n\n\n\n\n\n\n\n\n\nJan 9, 2020\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMachine learning\n\n\nBias-variance trade-off\n\n\nPrediction\n\n\nMath\n\n\nStatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 1, 2019\n\n\nChen Tang\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2019-09-01-bias-variance-breakdown/index.html",
+    "href": "posts/2019-09-01-bias-variance-breakdown/index.html",
+    "title": "A Very Detailed Bias-Variance Breakdown",
+    "section": "",
+    "text": "Although the concept of bias-variance trade-off is often discussed in machine learning textbooks, e.g., Bishop (2006), Hastie, Tibshirani, and Friedman (2009), James et al. (2013), I also find it important in almost any occasions in which we need to fit a statistical model on a data set with a limited number of observations.\nTo better understand the trade-off, we should be clear about the bias-variance decomposition. I prefer to call it bias-variance breakdown cause there are fewer syllables. This post is an attempt to go through the breakdown in a very detailed manner, mainly for my future reference. It may not be 100% correct because I’m very new to this topic. I will make changes if there is anything wrong."
+  },
+  {
+    "objectID": "posts/2019-09-01-bias-variance-breakdown/index.html#what-is-being-broken-down",
+    "href": "posts/2019-09-01-bias-variance-breakdown/index.html#what-is-being-broken-down",
+    "title": "A Very Detailed Bias-Variance Breakdown",
+    "section": "What is being broken down?",
+    "text": "What is being broken down?\nFirst off, the bias-variance concept lives in theory. In practice, we have no way to separate bias and variance. What we could observe is just the sum of them, as well as something called “irreducible error”. We will cover that later in this post.\nSince we are talking about theory, let’s make up the thing that needs to be broken down. Let’s assume that we are interested in studying the relationship between \\(X\\) and \\(Y\\). Suppose the relationship is: \\[Y = f(X) + \\epsilon\\],\nwhere \\(\\epsilon\\) is i.i.d. \\(E(\\epsilon) = 0\\) and \\(\\text{Var}(\\epsilon) = \\sigma^2\\).\nThen we obtain a data set, \\(D\\), that has \\(x_i\\) and \\(y_i\\) (\\(D = [x_i, y_i]\\)). Note that in the data set, \\(X\\) and \\(Y\\) are lowercase and have subscripts. This is because we are referring to observed data of \\(X\\) and \\(Y\\).\nAs usual, we fit a model to \\(D\\) and obtain the model \\(\\hat{f}(x_i)\\). There is a “hat” on \\(f(x_i)\\) because we are estimating the true model, \\(f()\\). After getting \\(\\hat{f}()\\), we are interested in how this model would perform in the future. So we have to come up with a way to measure the performance of the model when applied to new data. The most common way to measure the predictive performance of a model is mean squared error (MSE) on a new data set \\([x^\\ast, y^\\ast],\\) or theoretically, the expected squared error:\n\\[E[(y^\\ast - \\hat{f}(x^\\ast))^2]\\]\nThis is the thing to be broken down."
+  },
+  {
+    "objectID": "posts/2019-09-01-bias-variance-breakdown/index.html#breaking-it-down",
+    "href": "posts/2019-09-01-bias-variance-breakdown/index.html#breaking-it-down",
+    "title": "A Very Detailed Bias-Variance Breakdown",
+    "section": "Breaking it down",
+    "text": "Breaking it down\nBefore we go further, we need to make sure we are clear about which is which. Since this is an expected value, there must be random variables in this equation. What is random here? First, let’s take a look at \\(\\hat{f}(x^\\ast)\\).\nWe know that \\(\\hat{f}()\\) comes from \\(D\\), and \\(D\\) contains \\(\\epsilon\\), because the true model we assumed is \\(Y = f(X) + \\epsilon\\). So \\(\\hat{f}()\\) also contains \\(\\epsilon\\) and hence it is a random variable. Second, what about \\(y^\\ast\\)? Since \\([x^\\ast, y^\\ast]\\) is a sample from the true model, it again contains \\(\\epsilon\\), therefore \\(y^\\ast\\) is also a random variable.\nLet’s now play a mathematical trick:\n\\[E[(y^\\ast - \\hat{f}(x^\\ast))^2] = E[(y^\\ast - f(x^\\ast) + f(x^\\ast) - \\hat{f}(x^\\ast))^2]\\]\nHere we just add and subtract \\(f(x^\\ast)\\), nothing is changed. Let \\(A = y^\\ast - f(x^\\ast)\\) and \\(B = f(x^\\ast) - \\hat{f}(x^\\ast)\\). Then the above equation becomes:\n\\[\\begin{aligned}\nE[(A + B)^2] &= E[A^2 + B^2 + 2AB] \\\\\n&= E[A^2] + E[B^2] + 2E[AB]\n\\end{aligned}\\]\nLet’s put \\(A\\) and \\(B\\) back\n\\[E[(y^\\ast - f(x^\\ast))^2] + E[(f(x^\\ast) - \\hat{f}(x^\\ast))^2] + 2E\\{[y^\\ast - f(x^\\ast)][f(x^\\ast) - \\hat{f}(x^\\ast)]\\}\\]\nThis is very complicated, especially the long thing on the right. Let’s first expand it: \\[2\\{E[y^\\ast f(x^\\ast)] - E[y^\\ast \\hat{f}(x^\\ast)] - E[f(x^\\ast) f(x^\\ast)] + E[f(x^\\ast) \\hat{f}(x^\\ast)]\\}\\]\nAccording to our theoretical model, we know that \\(y^\\ast = f(x^\\ast) + \\epsilon\\), so\n\\[2\\{E[(f(x^\\ast) + \\epsilon) f(x^\\ast)] - E[(f(x^\\ast) + \\epsilon) \\hat{f}(x^\\ast)] - E[f(x^\\ast) f(x^\\ast)] + E[f(x^\\ast) \\hat{f}(x^\\ast)]\\}\\]\n\\[2\\{[f(x^\\ast)]^2 - E[f(x^\\ast) \\hat{f}(x^\\ast) + \\epsilon \\hat{f}(x^\\ast)] - [f(x^\\ast)]^2 + E[f(x^\\ast) \\hat{f}(x^\\ast)]\\}\\]\n\\[2\\{[f(x^\\ast)]^2 - E[f(x^\\ast) \\hat{f}(x^\\ast)] + E[\\epsilon \\hat{f}(x^\\ast)] - [f(x^\\ast)]^2 + E[f(x^\\ast) \\hat{f}(x^\\ast)]\\}\\]\nFour terms cancel out, the term \\(E[\\epsilon \\hat{f}(x^\\ast)] = 0\\), because \\(\\epsilon\\) and \\(\\hat{f}(x^\\ast)\\) are independent. Therefore \\(E[\\epsilon \\hat{f}(x^\\ast)] = E[\\epsilon] \\times E[\\hat{f}(x^\\ast)] = 0\\).\nOK. That long thing becomes zero and we are left with\n\\[E[(y^\\ast - f(x^\\ast))^2] + E[(f(x^\\ast) - \\hat{f}(x^\\ast))^2]\\]\nNow let’s play a similar trick on the second term, the first term remains unchanged.\n\\[E[(y^\\ast - f(x^\\ast))^2] + E\\{[f(x^\\ast) - E[\\hat{f}(x^\\ast)] + E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]^2\\}\\]\nAgain let \\(A = f(x^\\ast) - E[\\hat{f}(x^\\ast)]\\) and \\(B = E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)\\).\n\\[E[(y^\\ast - f(x^\\ast))^2] + E[(A + B)^2]\\]\n\\[E[(y^\\ast - f(x^\\ast))^2] + E[A^2] + E[B^2] + 2E[AB]\\]\nPlug in \\(A\\) and \\(B\\).\n\\[E[(y^\\ast - f(x^\\ast))^2] + E\\{[f(x^\\ast) - E[\\hat{f}(x^\\ast)]]^2\\} + E\\{[E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]^2\\}\\] \\[ + 2E\\{[f(x^\\ast) - E[\\hat{f}(x^\\ast)]][E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]\\}\\]\nLet’s again look at the most annoying thing on the second row. We notice that (1) \\(f(x^\\ast) - E[\\hat{f}(x^\\ast)]\\) is a constant, and (2) the expected value of \\(E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]\\) is just \\(E\\{E[\\hat{f}(x^\\ast)]\\} - E[\\hat{f}(x^\\ast)]\\). This equals \\(E[\\hat{f}(x^\\ast)] - E[\\hat{f}(x^\\ast)] = 0\\).\nSo we are left with\n\\[E[(y^\\ast - f(x^\\ast))^2] + E\\{[f(x^\\ast) - E[\\hat{f}(x^\\ast)]]^2\\} + E\\{[E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]^2\\}\\]\nWe also notice that, in the second term, both \\(f(x^\\ast)\\) and \\(E[\\hat{f}(x^\\ast)]\\) are constants, so we can drop the expectation operator.\n\\[E[(y^\\ast - f(x^\\ast))^2] + [f(x^\\ast) - E[\\hat{f}(x^\\ast)]]^2 + E\\{[E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]^2\\}\\]\nCool! We have finished the breakdown."
+  },
+  {
+    "objectID": "posts/2019-09-01-bias-variance-breakdown/index.html#naming-things",
+    "href": "posts/2019-09-01-bias-variance-breakdown/index.html#naming-things",
+    "title": "A Very Detailed Bias-Variance Breakdown",
+    "section": "Naming things",
+    "text": "Naming things\nAs a final step, let’s name the three terms in\n\\[E[(y^\\ast - f(x^\\ast))^2] + [f(x^\\ast) - E[\\hat{f}(x^\\ast)]]^2 + E\\{[E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]^2\\}\\]\nThe first term, \\(E[(y^\\ast - f(x^\\ast))^2]\\), is the variance of \\(\\epsilon\\), which is \\(\\sigma^2\\). We call this “irreducible error” or “irreducible noise”.\nThe second term, \\([f(x^\\ast) - E[\\hat{f}(x^\\ast)]]^2\\), is the “squared bias”, because the definition of the bias of an estimator is \\(\\text{bias}(\\hat{\\theta}) = E(\\hat{\\theta}) - \\theta\\).\nThe third term, \\(E\\{[E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]^2\\}\\)is, by definition, the variance of \\(\\hat{f}(x^\\ast)\\).\nSo to put everything together,\n\\[E[(y^\\ast - \\hat{f}(x^\\ast))^2] = \\text{Var}(\\epsilon) + \\text{bias}^2(\\hat{f}(x^\\ast)) + \\text{Var}(\\hat{f}(x^\\ast))\\]"
+  },
+  {
+    "objectID": "posts/2019-09-01-bias-variance-breakdown/index.html#reference",
+    "href": "posts/2019-09-01-bias-variance-breakdown/index.html#reference",
+    "title": "A Very Detailed Bias-Variance Breakdown",
+    "section": "Reference",
+    "text": "Reference\nBishop, Christopher M. (2006). Pattern recognition and machine learning. New York: Springer,\nGareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani. (2013). An introduction to statistical learning: with applications in R. New York :Springer,\nHastie, T., Tibshirani, R., & Friedman, J. H. (2009). The elements of statistical learning: data mining, inference, and prediction. 2nd ed. New York: Springer.\n(Image credit: http://scott.fortmann-roe.com/docs/BiasVariance.html)"
+  },
+  {
     "objectID": "posts/2020-01-09-basic-linear-algebra/index.html",
     "href": "posts/2020-01-09-basic-linear-algebra/index.html",
     "title": "Some Basic Linear Algebra",
@@ -49,87 +126,10 @@
     "text": "Full conditionals\n\\[\\begin{aligned}\n\\mu_j | . &\\sim \\mathcal{N}\\Big(\\frac{\\sum_{i=1}^{n_j} y_{ij} / \\sigma^2 + \\mu / \\tau^2}{n_j / \\sigma^2 + 1/\\tau^2}, \\frac{1}{n_j/\\sigma^2 + 1/\\tau^2}\\Big) \\\\\n\\mu |. &\\sim \\mathcal{N}\\Big(\\frac{\\sum_{j=1}^J \\mu_j/\\tau^2 + \\mu_0/\\tau_0^2}{J/\\tau^2 + 1/\\tau_0^2}, \\frac{1}{J/\\tau^2 + 1/\\tau_0^2}\\Big) \\\\\n1/\\tau^2 |. &\\sim \\mathcal{G}\\Big(\\alpha_\\tau + \\frac{J}{2}, \\beta_\\tau + \\frac{\\sum_{j=1}^J (\\mu_j - \\mu)^2}{2}\\Big) \\\\\n1/\\sigma^2 |. &\\sim \\mathcal{G}\\Big(\\alpha_\\sigma + \\frac{\\sum_{j=1}^J n_j}{2}, \\beta_\\sigma + \\frac{\\sum_{j=1}^J \\sum_{i=1}^{n_j}(y_{ij}-\\mu_j)^2}{2}\\Big)\n\\end{aligned}\\]\n(image credit: https://stats.stackexchange.com/q/44583)"
   },
   {
-    "objectID": "posts/2019-09-01-bias-variance-breakdown/index.html",
-    "href": "posts/2019-09-01-bias-variance-breakdown/index.html",
-    "title": "A Very Detailed Bias-Variance Breakdown",
-    "section": "",
-    "text": "Although the concept of bias-variance trade-off is often discussed in machine learning textbooks, e.g., Bishop (2006), Hastie, Tibshirani, and Friedman (2009), James et al. (2013), I also find it important in almost any occasions in which we need to fit a statistical model on a data set with a limited number of observations.\nTo better understand the trade-off, we should be clear about the bias-variance decomposition. I prefer to call it bias-variance breakdown cause there are fewer syllables. This post is an attempt to go through the breakdown in a very detailed manner, mainly for my future reference. It may not be 100% correct because I’m very new to this topic. I will make changes if there is anything wrong."
-  },
-  {
-    "objectID": "posts/2019-09-01-bias-variance-breakdown/index.html#what-is-being-broken-down",
-    "href": "posts/2019-09-01-bias-variance-breakdown/index.html#what-is-being-broken-down",
-    "title": "A Very Detailed Bias-Variance Breakdown",
-    "section": "What is being broken down?",
-    "text": "What is being broken down?\nFirst off, the bias-variance concept lives in theory. In practice, we have no way to separate bias and variance. What we could observe is just the sum of them, as well as something called “irreducible error”. We will cover that later in this post.\nSince we are talking about theory, let’s make up the thing that needs to be broken down. Let’s assume that we are interested in studying the relationship between \\(X\\) and \\(Y\\). Suppose the relationship is: \\[Y = f(X) + \\epsilon\\],\nwhere \\(\\epsilon\\) is i.i.d. \\(E(\\epsilon) = 0\\) and \\(\\text{Var}(\\epsilon) = \\sigma^2\\).\nThen we obtain a data set, \\(D\\), that has \\(x_i\\) and \\(y_i\\) (\\(D = [x_i, y_i]\\)). Note that in the data set, \\(X\\) and \\(Y\\) are lowercase and have subscripts. This is because we are referring to observed data of \\(X\\) and \\(Y\\).\nAs usual, we fit a model to \\(D\\) and obtain the model \\(\\hat{f}(x_i)\\). There is a “hat” on \\(f(x_i)\\) because we are estimating the true model, \\(f()\\). After getting \\(\\hat{f}()\\), we are interested in how this model would perform in the future. So we have to come up with a way to measure the performance of the model when applied to new data. The most common way to measure the predictive performance of a model is mean squared error (MSE) on a new data set \\([x^\\ast, y^\\ast],\\) or theoretically, the expected squared error:\n\\[E[(y^\\ast - \\hat{f}(x^\\ast))^2]\\]\nThis is the thing to be broken down."
-  },
-  {
-    "objectID": "posts/2019-09-01-bias-variance-breakdown/index.html#breaking-it-down",
-    "href": "posts/2019-09-01-bias-variance-breakdown/index.html#breaking-it-down",
-    "title": "A Very Detailed Bias-Variance Breakdown",
-    "section": "Breaking it down",
-    "text": "Breaking it down\nBefore we go further, we need to make sure we are clear about which is which. Since this is an expected value, there must be random variables in this equation. What is random here? First, let’s take a look at \\(\\hat{f}(x^\\ast)\\).\nWe know that \\(\\hat{f}()\\) comes from \\(D\\), and \\(D\\) contains \\(\\epsilon\\), because the true model we assumed is \\(Y = f(X) + \\epsilon\\). So \\(\\hat{f}()\\) also contains \\(\\epsilon\\) and hence it is a random variable. Second, what about \\(y^\\ast\\)? Since \\([x^\\ast, y^\\ast]\\) is a sample from the true model, it again contains \\(\\epsilon\\), therefore \\(y^\\ast\\) is also a random variable.\nLet’s now play a mathematical trick:\n\\[E[(y^\\ast - \\hat{f}(x^\\ast))^2] = E[(y^\\ast - f(x^\\ast) + f(x^\\ast) - \\hat{f}(x^\\ast))^2]\\]\nHere we just add and subtract \\(f(x^\\ast)\\), nothing is changed. Let \\(A = y^\\ast - f(x^\\ast)\\) and \\(B = f(x^\\ast) - \\hat{f}(x^\\ast)\\). Then the above equation becomes:\n\\[\\begin{aligned}\nE[(A + B)^2] &= E[A^2 + B^2 + 2AB] \\\\\n&= E[A^2] + E[B^2] + 2E[AB]\n\\end{aligned}\\]\nLet’s put \\(A\\) and \\(B\\) back\n\\[E[(y^\\ast - f(x^\\ast))^2] + E[(f(x^\\ast) - \\hat{f}(x^\\ast))^2] + 2E\\{[y^\\ast - f(x^\\ast)][f(x^\\ast) - \\hat{f}(x^\\ast)]\\}\\]\nThis is very complicated, especially the long thing on the right. Let’s first expand it: \\[2\\{E[y^\\ast f(x^\\ast)] - E[y^\\ast \\hat{f}(x^\\ast)] - E[f(x^\\ast) f(x^\\ast)] + E[f(x^\\ast) \\hat{f}(x^\\ast)]\\}\\]\nAccording to our theoretical model, we know that \\(y^\\ast = f(x^\\ast) + \\epsilon\\), so\n\\[2\\{E[(f(x^\\ast) + \\epsilon) f(x^\\ast)] - E[(f(x^\\ast) + \\epsilon) \\hat{f}(x^\\ast)] - E[f(x^\\ast) f(x^\\ast)] + E[f(x^\\ast) \\hat{f}(x^\\ast)]\\}\\]\n\\[2\\{[f(x^\\ast)]^2 - E[f(x^\\ast) \\hat{f}(x^\\ast) + \\epsilon \\hat{f}(x^\\ast)] - [f(x^\\ast)]^2 + E[f(x^\\ast) \\hat{f}(x^\\ast)]\\}\\]\n\\[2\\{[f(x^\\ast)]^2 - E[f(x^\\ast) \\hat{f}(x^\\ast)] + E[\\epsilon \\hat{f}(x^\\ast)] - [f(x^\\ast)]^2 + E[f(x^\\ast) \\hat{f}(x^\\ast)]\\}\\]\nFour terms cancel out, the term \\(E[\\epsilon \\hat{f}(x^\\ast)] = 0\\), because \\(\\epsilon\\) and \\(\\hat{f}(x^\\ast)\\) are independent. Therefore \\(E[\\epsilon \\hat{f}(x^\\ast)] = E[\\epsilon] \\times E[\\hat{f}(x^\\ast)] = 0\\).\nOK. That long thing becomes zero and we are left with\n\\[E[(y^\\ast - f(x^\\ast))^2] + E[(f(x^\\ast) - \\hat{f}(x^\\ast))^2]\\]\nNow let’s play a similar trick on the second term, the first term remains unchanged.\n\\[E[(y^\\ast - f(x^\\ast))^2] + E\\{[f(x^\\ast) - E[\\hat{f}(x^\\ast)] + E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]^2\\}\\]\nAgain let \\(A = f(x^\\ast) - E[\\hat{f}(x^\\ast)]\\) and \\(B = E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)\\).\n\\[E[(y^\\ast - f(x^\\ast))^2] + E[(A + B)^2]\\]\n\\[E[(y^\\ast - f(x^\\ast))^2] + E[A^2] + E[B^2] + 2E[AB]\\]\nPlug in \\(A\\) and \\(B\\).\n\\[E[(y^\\ast - f(x^\\ast))^2] + E\\{[f(x^\\ast) - E[\\hat{f}(x^\\ast)]]^2\\} + E\\{[E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]^2\\}\\] \\[ + 2E\\{[f(x^\\ast) - E[\\hat{f}(x^\\ast)]][E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]\\}\\]\nLet’s again look at the most annoying thing on the second row. We notice that (1) \\(f(x^\\ast) - E[\\hat{f}(x^\\ast)]\\) is a constant, and (2) the expected value of \\(E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]\\) is just \\(E\\{E[\\hat{f}(x^\\ast)]\\} - E[\\hat{f}(x^\\ast)]\\). This equals \\(E[\\hat{f}(x^\\ast)] - E[\\hat{f}(x^\\ast)] = 0\\).\nSo we are left with\n\\[E[(y^\\ast - f(x^\\ast))^2] + E\\{[f(x^\\ast) - E[\\hat{f}(x^\\ast)]]^2\\} + E\\{[E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]^2\\}\\]\nWe also notice that, in the second term, both \\(f(x^\\ast)\\) and \\(E[\\hat{f}(x^\\ast)]\\) are constants, so we can drop the expectation operator.\n\\[E[(y^\\ast - f(x^\\ast))^2] + [f(x^\\ast) - E[\\hat{f}(x^\\ast)]]^2 + E\\{[E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]^2\\}\\]\nCool! We have finished the breakdown."
-  },
-  {
-    "objectID": "posts/2019-09-01-bias-variance-breakdown/index.html#naming-things",
-    "href": "posts/2019-09-01-bias-variance-breakdown/index.html#naming-things",
-    "title": "A Very Detailed Bias-Variance Breakdown",
-    "section": "Naming things",
-    "text": "Naming things\nAs a final step, let’s name the three terms in\n\\[E[(y^\\ast - f(x^\\ast))^2] + [f(x^\\ast) - E[\\hat{f}(x^\\ast)]]^2 + E\\{[E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]^2\\}\\]\nThe first term, \\(E[(y^\\ast - f(x^\\ast))^2]\\), is the variance of \\(\\epsilon\\), which is \\(\\sigma^2\\). We call this “irreducible error” or “irreducible noise”.\nThe second term, \\([f(x^\\ast) - E[\\hat{f}(x^\\ast)]]^2\\), is the “squared bias”, because the definition of the bias of an estimator is \\(\\text{bias}(\\hat{\\theta}) = E(\\hat{\\theta}) - \\theta\\).\nThe third term, \\(E\\{[E[\\hat{f}(x^\\ast)] - \\hat{f}(x^\\ast)]^2\\}\\)is, by definition, the variance of \\(\\hat{f}(x^\\ast)\\).\nSo to put everything together,\n\\[E[(y^\\ast - \\hat{f}(x^\\ast))^2] = \\text{Var}(\\epsilon) + \\text{bias}^2(\\hat{f}(x^\\ast)) + \\text{Var}(\\hat{f}(x^\\ast))\\]"
-  },
-  {
-    "objectID": "posts/2019-09-01-bias-variance-breakdown/index.html#reference",
-    "href": "posts/2019-09-01-bias-variance-breakdown/index.html#reference",
-    "title": "A Very Detailed Bias-Variance Breakdown",
-    "section": "Reference",
-    "text": "Reference\nBishop, Christopher M. (2006). Pattern recognition and machine learning. New York: Springer,\nGareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani. (2013). An introduction to statistical learning: with applications in R. New York :Springer,\nHastie, T., Tibshirani, R., & Friedman, J. H. (2009). The elements of statistical learning: data mining, inference, and prediction. 2nd ed. New York: Springer.\n(Image credit: http://scott.fortmann-roe.com/docs/BiasVariance.html)"
-  },
-  {
     "objectID": "posts/2022-07-02-correlation-vs-causation/index.html",
     "href": "posts/2022-07-02-correlation-vs-causation/index.html",
     "title": "Correlation vs. Causation",
     "section": "",
     "text": "A great way to understand correlation \\(\\ne\\) causation :)"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Chen Tang",
-    "section": "",
-    "text": "Research Methods\n\n\n\n\n\n\n\n\n\n\n\nJul 30, 2022\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nBayesian\n\n\nStatistics\n\n\nMath\n\n\n\n\n\n\n\n\n\n\n\nDec 4, 2021\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMath\n\n\nStatistics\n\n\n\n\n\n\n\n\n\n\n\nMay 31, 2021\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMath\n\n\nStatistics\n\n\n\n\n\n\n\n\n\n\n\nJan 9, 2020\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMachine learning\n\n\nBias-variance trade-off\n\n\nPrediction\n\n\nMath\n\n\nStatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 1, 2019\n\n\nChen Tang\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Hi, welcome to my personal website. I am currently a PhD candidate at the School of Labor and Employment Relations, University of Illinois at Urbana-Champaign. My advisor is Dr. Daniel A. Newman. I am also an affiliated doctoral researcher at Purdue Recruitment and Selection Research Lab led by Dr. Q. Chelsea Song.\nMy research interests are People Analytics and other topics related to Human Resources and Organizational Behavior. For more information about me, please see my CV here."
-  },
-  {
-    "objectID": "about.html#please-note",
-    "href": "about.html#please-note",
-    "title": "About",
-    "section": "Please note…",
-    "text": "Please note…\nThis website is actually my personal notebook. It contains stuff that I’m working on, or some pieces of information that I find interesting or important. They are very unstructured and probably contain a lot of errors/typos/thoughtos. ;o)"
-  },
-  {
-    "objectID": "funstuff/20220701-learn-py-with-keen/index.html",
-    "href": "funstuff/20220701-learn-py-with-keen/index.html",
-    "title": "Learning Python with Keen",
-    "section": "",
-    "text": "My older son, Keen, is six years old now and he’s getting interested in coding. So I’m now working on a series of Jupyter notebooks that introduce him to Python.\nAlthough I’m more of an R user, I feel Python is a better language to start for kids.\n(Thanks to the reticulate package, I am able to write and run Python code within RStudio. Mad respect to whoever developed this package!)"
-  },
-  {
-    "objectID": "funstuff/20220701-learn-py-with-keen/index.html#session-1-python-basics",
-    "href": "funstuff/20220701-learn-py-with-keen/index.html#session-1-python-basics",
-    "title": "Learning Python with Keen",
-    "section": "Session 1: Python Basics",
-    "text": "Session 1: Python Basics\n\n1. Numbers\n\n1.1. Using Python as a calculator\n\n1 + 5\n\n6\n\n\n\n538687445 + 3897886465\n\n4436573910\n\n\n\n6 - 3\n\n3\n\n\n\n30 - 8\n\n22\n\n\n\n\n1.2. Variables\nThe equals sign (“=”) means assignment, e.g., \\(x = 1\\) gives the value \\(1\\) to variable \\(x\\).\n\n1 + 5\n\n6\n\n\n\nx = 1\ny = 5\n\nx + y\n\n6\n\n\n\nx = 3\n\nx + y\n\n8\n\n\n\nz = x - y\nz\n\n-2\n\n\nYour turn: - Create two variables: a and b. Assign 5 to a, and 10 to b - Calculate the sum of a and b, save it to a third variable called c - Calculate \\(a \\times b\\) (hint: In Python, the multiplication sign is “*” [asterisk]) - Calculate \\(a \\div b\\) (The division sign is “/” [forward slash])\n\na = 5\nb = 10\n\n\nc = a + b\n\n\na * b\n\n50\n\n\n\na / b\n\n0.5\n\n\nMini Project:\nCalculate \\(1 + 2 + ... + 10\\).\nHint:\n\\[1 + 2 + ... + k = \\frac{k \\times (k + 1)}{2}\\]\n(Why?)\n\n# step 1: determine k\nk = 10\n\n# step 2: write the equation\nk * (k + 1) / 2\n\n[1] 55\n\n\n\n# defining a function to take any k value\ndef calc_sum(k):\n   s = k * (k + 1) / 2 \n   return s\n\ncalc_sum(k = 1_000_000)\n\n500000500000.0\n\n\n\n\n1.3 Strings\n\ns1 = \"hello\"\ns2 = \"Keen\"\n\nprint(s1)\n\nhello\n\n\n\nprint(s2)\n\nKeen\n\n\n\nprint(s1 + s2)\n\nhelloKeen\n\n\n\nprint(s1 + \", \" + s2)\n\nhello, Keen\n\n\n\nprint(s1 + \", \" + s2 + \"!\")\n\nhello, Keen!\n\n\n\nprint(\"H\" + s1[1:5] + \", \" + s2 + \"!\")\n\nHello, Keen!\n\n\n\na1 = \"4\"\nb5 = \"14\"\n\na1 + b5\n\n'414'\n\n\nProject:\n\n# tell me about you\nname = \"huijing\"\nage = 19\n\nprint(\"Hello, \" + name + \"! You are \" + str(age) + \" years old.\")\n\nHello, huijing! You are 19 years old.\n\n\n\nname\n\n'huijing'\n\n\"H\" + name[1:]\n\n'Huijing'\n\n\n\n\n1.4 Lists\n\nfruits = [\"apple\", \"banana\", \"peach\"]\nkeen = [2, 4, 1]\nmom = [0, 1, 3]\n\n\n# how many bananas did Keen eat this week?\nprint(\"Keen ate \" + str(keen[1]) + \" bananas this week.\")\n\nKeen ate 4 bananas this week.\n\n\n\n# How many peaches did mon eat this week?\nprint(\"Mom ate \" + str(mom[2]) + \" peaches this week.\")\n\nMom ate 3 peaches this week.\n\n\n\n# How many bananas were eaten in total?\nprint(\"In total, \" + str(keen[1] + mom[1]) + \" were eaten this week\")\n\nIn total, 5 were eaten this week"
-  },
-  {
-    "objectID": "fun.html",
-    "href": "fun.html",
-    "title": "Chen Tang",
-    "section": "",
-    "text": "Life\n\n\nPython\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\nChen Tang\n\n\n\n\n\n\nNo matching items"
   }
 ]

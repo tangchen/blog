@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/fun.html",
+    "items": [
+      "/funstuff/20220701-learn-py-with-keen/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/2022-07-02-correlation-vs-causation/index.html",
@@ -7,12 +13,6 @@
       "/posts/2021-05-31-tmag2021-data-leakage/index.html",
       "/posts/2020-01-09-basic-linear-algebra/index.html",
       "/posts/2019-09-01-bias-variance-breakdown/index.html"
-    ]
-  },
-  {
-    "listing": "/fun.html",
-    "items": [
-      "/funstuff/20220701-learn-py-with-keen/index.html"
     ]
   }
 ]
