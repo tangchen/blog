@@ -15,6 +15,8 @@ website:
         href: index.qmd
       - text: "CV"
         file: cv.pdf
+      - text: "Fun Stuff"
+        href: fun.qmd
       - about.qmd
       - icon: twitter
         href: https://twitter.com/tngchn

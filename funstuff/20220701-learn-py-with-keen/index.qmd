@@ -1,0 +1,187 @@
+---
+title: "Learning Python with Keen"
+author: "Chen Tang"
+image: "python-logo.png"
+date: 2022-07-01
+categories: ["Life", "Python"]
+draft: false
+---
+
+My older son, Keen, is six years old now and he's getting interested in coding. So I'm now working on a series of Jupyter notebooks that introduce him to Python.
+
+Although I'm more of an R user, I feel Python is a better language to start for kids.
+
+(Thanks to the `reticulate` package, I am able to write and run Python code within RStudio. Mad respect to whoever developed this package!)
+
+```{r}
+library(reticulate)
+```
+
+## Session 1: Python Basics
+
+### 1. Numbers
+
+#### 1.1. Using Python as a calculator
+
+```{python}
+1 + 5
+```
+
+```{python}
+538687445 + 3897886465
+```
+
+```{python}
+6 - 3
+```
+
+```{python}
+30 - 8
+```
+
+#### 1.2. Variables
+
+The equals sign ("=") means assignment, e.g., $x = 1$ gives the value $1$ to variable $x$.
+
+```{python}
+1 + 5
+```
+
+```{python}
+x = 1
+y = 5
+
+x + y
+```
+
+```{python}
+x = 3
+
+x + y
+```
+
+```{python}
+z = x - y
+z
+```
+
+**Your turn:** - Create two variables: a and b. Assign 5 to a, and 10 to b - Calculate the sum of a and b, save it to a third variable called c - Calculate $a \times b$ (hint: In Python, the multiplication sign is "\*" \[asterisk\]) - Calculate $a \div b$ (The division sign is "/" \[forward slash\])
+
+```{python}
+a = 5
+b = 10
+```
+
+```{python}
+c = a + b
+```
+
+```{python}
+a * b
+```
+
+```{python}
+a / b
+```
+
+**Mini Project:**
+
+Calculate $1 + 2 + ... + 10$.
+
+Hint:
+
+$$1 + 2 + ... + k = \frac{k \times (k + 1)}{2}$$
+
+(Why?)
+
+```{r}
+# step 1: determine k
+k = 10
+
+# step 2: write the equation
+k * (k + 1) / 2
+```
+
+```{python}
+# defining a function to take any k value
+def calc_sum(k):
+   s = k * (k + 1) / 2 
+   return s
+
+calc_sum(k = 1_000_000)
+```
+
+#### 1.3 Strings
+
+```{python}
+s1 = "hello"
+s2 = "Keen"
+
+print(s1)
+```
+
+```{python}
+print(s2)
+```
+
+```{python}
+print(s1 + s2)
+```
+
+```{python}
+print(s1 + ", " + s2)
+```
+
+```{python}
+print(s1 + ", " + s2 + "!")
+```
+
+```{python}
+print("H" + s1[1:5] + ", " + s2 + "!")
+```
+
+```{python}
+a1 = "4"
+b5 = "14"
+
+a1 + b5
+```
+
+**Project:**
+
+```{python}
+# tell me about you
+name = "huijing"
+age = 19
+
+print("Hello, " + name + "! You are " + str(age) + " years old.")
+```
+
+```{python}
+name
+
+"H" + name[1:]
+```
+
+#### 1.4 Lists
+
+```{python}
+fruits = ["apple", "banana", "peach"]
+keen = [2, 4, 1]
+mom = [0, 1, 3]
+```
+
+```{python}
+# how many bananas did Keen eat this week?
+print("Keen ate " + str(keen[1]) + " bananas this week.")
+```
+
+```{python}
+# How many peaches did mon eat this week?
+print("Mom ate " + str(mom[2]) + " peaches this week.")
+```
+
+```{python}
+# How many bananas were eaten in total?
+print("In total, " + str(keen[1] + mom[1]) + " were eaten this week")
+```

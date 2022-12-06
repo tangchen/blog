@@ -95,7 +95,7 @@
     "href": "index.html",
     "title": "Chen Tang",
     "section": "",
-    "text": "Correlation vs. Causation\n\n\n\n\n\n\n\nResearch Methods\n\n\n\n\n\n\n\n\n\n\n\nJul 30, 2022\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\nHierarchical Models\n\n\n\n\n\n\n\nBayesian\n\n\nStatistics\n\n\nMath\n\n\n\n\n\n\n\n\n\n\n\nDec 4, 2021\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\nData Leakage\n\n\n\n\n\n\n\nMath\n\n\nStatistics\n\n\n\n\n\n\n\n\n\n\n\nMay 31, 2021\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\nSome Basic Linear Algebra\n\n\n\n\n\n\n\nMath\n\n\nStatistics\n\n\n\n\n\n\n\n\n\n\n\nJan 9, 2020\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\nA Very Detailed Bias-Variance Breakdown\n\n\n\n\n\n\n\nMachine learning\n\n\nBias-variance trade-off\n\n\nPrediction\n\n\nMath\n\n\nStatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 1, 2019\n\n\nChen Tang\n\n\n\n\n\n\nNo matching items"
+    "text": "Research Methods\n\n\n\n\n\n\n\n\n\n\n\nJul 30, 2022\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nBayesian\n\n\nStatistics\n\n\nMath\n\n\n\n\n\n\n\n\n\n\n\nDec 4, 2021\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMath\n\n\nStatistics\n\n\n\n\n\n\n\n\n\n\n\nMay 31, 2021\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMath\n\n\nStatistics\n\n\n\n\n\n\n\n\n\n\n\nJan 9, 2020\n\n\nChen Tang\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMachine learning\n\n\nBias-variance trade-off\n\n\nPrediction\n\n\nMath\n\n\nStatistics\n\n\n\n\n\n\n\n\n\n\n\nSep 1, 2019\n\n\nChen Tang\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -110,5 +110,26 @@
     "title": "About",
     "section": "Please note…",
     "text": "Please note…\nThis website is actually my personal notebook. It contains stuff that I’m working on, or some pieces of information that I find interesting or important. They are very unstructured and probably contain a lot of errors/typos/thoughtos. ;o)"
+  },
+  {
+    "objectID": "funstuff/20220701-learn-py-with-keen/index.html",
+    "href": "funstuff/20220701-learn-py-with-keen/index.html",
+    "title": "Learning Python with Keen",
+    "section": "",
+    "text": "My older son, Keen, is six years old now and he’s getting interested in coding. So I’m now working on a series of Jupyter notebooks that introduce him to Python.\nAlthough I’m more of an R user, I feel Python is a better language to start for kids.\n(Thanks to the reticulate package, I am able to write and run Python code within RStudio. Mad respect to whoever developed this package!)"
+  },
+  {
+    "objectID": "funstuff/20220701-learn-py-with-keen/index.html#session-1-python-basics",
+    "href": "funstuff/20220701-learn-py-with-keen/index.html#session-1-python-basics",
+    "title": "Learning Python with Keen",
+    "section": "Session 1: Python Basics",
+    "text": "Session 1: Python Basics\n\n1. Numbers\n\n1.1. Using Python as a calculator\n\n1 + 5\n\n6\n\n\n\n538687445 + 3897886465\n\n4436573910\n\n\n\n6 - 3\n\n3\n\n\n\n30 - 8\n\n22\n\n\n\n\n1.2. Variables\nThe equals sign (“=”) means assignment, e.g., \\(x = 1\\) gives the value \\(1\\) to variable \\(x\\).\n\n1 + 5\n\n6\n\n\n\nx = 1\ny = 5\n\nx + y\n\n6\n\n\n\nx = 3\n\nx + y\n\n8\n\n\n\nz = x - y\nz\n\n-2\n\n\nYour turn: - Create two variables: a and b. Assign 5 to a, and 10 to b - Calculate the sum of a and b, save it to a third variable called c - Calculate \\(a \\times b\\) (hint: In Python, the multiplication sign is “*” [asterisk]) - Calculate \\(a \\div b\\) (The division sign is “/” [forward slash])\n\na = 5\nb = 10\n\n\nc = a + b\n\n\na * b\n\n50\n\n\n\na / b\n\n0.5\n\n\nMini Project:\nCalculate \\(1 + 2 + ... + 10\\).\nHint:\n\\[1 + 2 + ... + k = \\frac{k \\times (k + 1)}{2}\\]\n(Why?)\n\n# step 1: determine k\nk = 10\n\n# step 2: write the equation\nk * (k + 1) / 2\n\n[1] 55\n\n\n\n# defining a function to take any k value\ndef calc_sum(k):\n   s = k * (k + 1) / 2 \n   return s\n\ncalc_sum(k = 1_000_000)\n\n500000500000.0\n\n\n\n\n1.3 Strings\n\ns1 = \"hello\"\ns2 = \"Keen\"\n\nprint(s1)\n\nhello\n\n\n\nprint(s2)\n\nKeen\n\n\n\nprint(s1 + s2)\n\nhelloKeen\n\n\n\nprint(s1 + \", \" + s2)\n\nhello, Keen\n\n\n\nprint(s1 + \", \" + s2 + \"!\")\n\nhello, Keen!\n\n\n\nprint(\"H\" + s1[1:5] + \", \" + s2 + \"!\")\n\nHello, Keen!\n\n\n\na1 = \"4\"\nb5 = \"14\"\n\na1 + b5\n\n'414'\n\n\nProject:\n\n# tell me about you\nname = \"huijing\"\nage = 19\n\nprint(\"Hello, \" + name + \"! You are \" + str(age) + \" years old.\")\n\nHello, huijing! You are 19 years old.\n\n\n\nname\n\n'huijing'\n\n\"H\" + name[1:]\n\n'Huijing'\n\n\n\n\n1.4 Lists\n\nfruits = [\"apple\", \"banana\", \"peach\"]\nkeen = [2, 4, 1]\nmom = [0, 1, 3]\n\n\n# how many bananas did Keen eat this week?\nprint(\"Keen ate \" + str(keen[1]) + \" bananas this week.\")\n\nKeen ate 4 bananas this week.\n\n\n\n# How many peaches did mon eat this week?\nprint(\"Mom ate \" + str(mom[2]) + \" peaches this week.\")\n\nMom ate 3 peaches this week.\n\n\n\n# How many bananas were eaten in total?\nprint(\"In total, \" + str(keen[1] + mom[1]) + \" were eaten this week\")\n\nIn total, 5 were eaten this week"
+  },
+  {
+    "objectID": "fun.html",
+    "href": "fun.html",
+    "title": "Chen Tang",
+    "section": "",
+    "text": "Life\n\n\nPython\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2022\n\n\nChen Tang\n\n\n\n\n\n\nNo matching items"
   }
 ]
