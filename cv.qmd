@@ -13,15 +13,7 @@ format:
     fontsize: "20"
 ---
 
-<!-- <p style="text-align:center"> <font size="+3"><b>Chen Tang</b></font></font></p> -->
-
-<!-- <p style="text-align:center"><i>(Updated: June 2022)</i></p> -->
-
-<!-- <p style="text-align:center">University of Illinois Urbana-Champaign</p> -->
-
-<!-- <p style="text-align:center">504 E Armory Ave, Champaign, IL 61820</p> -->
-
-<!-- <p style="text-align:center"><a href="mailto:tangc@tangc.net">tangc@tangc.net</a></p> -->
+<!-- Code for this CV is inspired by Alex Bass (https://alexbass.me/posts/resume/)  -->
 
 ```{=tex}
 \begin
@@ -42,6 +34,7 @@ University of Illinois Urbana-Champaign\\
 \end{center}
 \vspace{15pt}
 ```
+
 ## **EDUCATION**
 
 ### School of Labor and Employment Relations, University of Illinois Urbana-Champaign
