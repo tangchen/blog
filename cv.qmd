@@ -26,7 +26,7 @@ University of Illinois Urbana-Champaign\\
 \vspace{5pt}
 504 E Armory Ave, Champaign, IL 61820\\
 \vspace{5pt}
-\href{mailto:tangc@tangc.net}{Email} ∙
+\href{mailto:tangc@tangc.net}{tangc@tangc.net} ∙
 \href{https://tangc.net}{Website} ∙
 \href{https://www.linkedin.com/in/tangchen/}{LinkedIn}\\
 \vspace{5pt}
